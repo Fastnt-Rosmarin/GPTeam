@@ -1,0 +1,119 @@
+<body>
+  <h1>Hello World!!</h1>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title>Document</title>
+</head>
+<form method="POST">
+    <button type="submit" name="generate" class="buttonClass">Run SQL</button>
+    <button type="submit" name="select" class="buttonClass">Show Data</button>
+    <button type="submit" name="truncate" class="buttonClass">Truncate Table</button>
+</form>
+<a href="./editor.php" class="buttonClass">Go to Editor</a>
+<a href="./pages.php" class="buttonClass">Go to Pages</a>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/link@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/image@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/checklist@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/list@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/embed@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/quote@2.7.6/dist/quote.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/paragraph@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/table@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/inline-code@latest"></script>  
+  <div class="news-title-create"><input type="text" id="news-title" placeholder="Введите название новости"></div>
+  <div id="editorjs" style="margin-bottom: 20px;"></div>
+  <button id="save-button" class="buttonClass">Сохранить статью</button>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Объявляем editor в глобальной области видимости
+      window.editor = new EditorJS({
+        holder: 'editorjs',
+        tools: {
+          header: {
+            class: Header,
+            inlineToolbar: true,
+            config: {
+              placeholder: 'Введите заголовок'
+            },
+            shortcut: 'CMD+SHIFT+H'
+          },
+          image: {
+            class: ImageTool,
+            config: {
+              endpoints: {
+                byFile: 'upload.php', // Update this line
+                byUrl: 'http://localhost/fetchUrl.php',
+              }
+            }
+          },
+
+          quote: {
+            class: Quote,
+            inlineToolbar: true,
+            config: {
+              quotePlaceholder: 'Введите цитату',
+              captionPlaceholder: 'Автор'
+            },
+            shortcut: 'CMD+SHIFT+Q'
+          },
+          paragraph: {
+            class: Paragraph,
+            inlineToolbar: true,
+          },
+          embed: Embed,
+          table: Table,
+          inlineCode: InlineCode,
+        },
+        placeholder: 'Начните писать свою статью...',
+        onReady: () => {
+          // Обработчик события готовности редактора
+          console.log('Editor.js готов к работе');
+        },
+        onChange: () => {
+          console.log('Содержание изменилось');
+        }
+      });
+
+      document.getElementById('save-button').addEventListener('click', () => {
+        const newsTitle = document.getElementById('news-title').value;
+        if (window.editor) {
+          window.editor.save().then((outputData) => {
+            const postData = {
+              title: newsTitle,
+              content: outputData
+            };
+            fetch('saveArticle.php', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(postData)
+              }).then(response => response.json())
+              .then(data => {
+                console.log('Success:', data);
+              }).catch((error) => {
+                console.error('Error:', error);
+              });
+          }).catch((error) => {
+            console.log('Saving failed: ', error)
+          });
+        } else {
+          console.error('Editor.js не был инициализирован');
+        }
+      });
+    });
+</script>
+  <script src="../js/script.js">
+  <script src="editor.js">
+</body>
+</html>
