@@ -49,33 +49,5 @@
         }
       });
 
-      document.getElementById('save-button').addEventListener('click', () => {
-        const newsTitle = document.getElementById('news-title').value;
-        if (window.editor) {
-          window.editor.save().then((outputData) => {
-            const postData = {
-              title: newsTitle,
-              content: outputData
-            };
-            fetch('saveArticle.php', {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(postData)
-              }).then(response => response.json())
-              .then(data => {
-                console.log('Success:', data);
-              }).catch((error) => {
-                console.error('Error:', error, data);
-              });
-          }).catch((error) => {
-            console.log('Saving failed: ', error)
-            console.log('Data that was being sent:', postData);
-          });
-        } else {
-          console.error('Editor.js не был инициализирован');
-        }
-      });
     });
 </script>
