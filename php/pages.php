@@ -3,6 +3,7 @@
 
     <?php
       include './include.php';
+      include './display_article.php';
     ?>
 
     <script src="../js/script.js">

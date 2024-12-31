@@ -4,10 +4,16 @@
   <?php
     include './include.php';
   ?>
-  
-  <div class="news-title-create"><input type="text" id="news-title" placeholder="Введите название новости"></div>
-  <div id="editorjs" style="margin-bottom: 20px;"></div>
-  <button id="save-button" class="buttonClass" onclick="saveFunction()">Сохранить статью</button>
+<div class="containerAlpha">
+  <div class="container">
+    <div class="titleInput"><input type="text" class="input" id="news-title" placeholder="Введите название новости"></div>
+    <div id="editorjs" style="margin-bottom: 20px;"></div>
+    <div class="buttonContainer">
+      <button id="save-button" class="buttonClass" onclick="saveFunction()">Сохранить статью</button>
+    </div>
+  </div>
+</div>
+ 
   
   <?php
     include './editrepo.php';

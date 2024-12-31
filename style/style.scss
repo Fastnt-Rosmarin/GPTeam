@@ -1,6 +1,22 @@
 html {
   background-color: #1c1b18;
   color: #eae0c2;
+  font-size: 15px;
+  font-family: Arial;
+}
+.containerAlpha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 60%;
 }
 .buttonClass {
   display: flex;
@@ -29,4 +45,59 @@ html {
 .buttonClass:active {
   width: 130px;
   height: 45px;
+}
+.titleInput {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #333029;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  font-size: 18px;
+  padding: 5px 10px;
+  width: 100%;
+  outline: none;
+  background-color: #1c1b18;
+  color: #eae0c2;
+  border: 1px solid #eae0c2;
+  border-radius: 5px;
+  //box-shadow: 3px 3px 2px 0px #eae0c2;
+  transition: 0.3s ease;
+}
+
+.input:focus {
+  background: #1c1b18;
+  border: 1px solid #eae0c2;
+  border-radius: 10px;
+}
+
+.input::placeholder {
+  color: #eae0c29f;
+  font-style: italic;
+}
+#editorjs {
+  width: 100%;
+}
+.codex-editor__redactor {
+  padding-left: 0;
+  padding-top: 25px !important;
+  padding-bottom: 150px !important;
+}
+.ce-block__content {
+  max-width: 100%;
+}
+.ce-toolbar__content {
+  max-width: 100%;
+}
+.buttonContainer {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #333029;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
