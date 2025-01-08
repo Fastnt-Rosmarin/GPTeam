@@ -114,4 +114,26 @@ html {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+
+.article-actions,
+.article-actions * {
+  display: flex;
+  flex-direction: row;
+}
+
+.article-actions {
+  padding: 10px;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.imageEditor {
+  height: 300px;
 }/*# sourceMappingURL=style.css.map */
