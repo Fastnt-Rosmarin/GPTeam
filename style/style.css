@@ -1,8 +1,22 @@
-html {
+/*html {
   background-color: #1c1b18;
   color: #eae0c2;
   font-size: 15px;
   font-family: Arial;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Montserrat", serif;
+  border: none;
+  outline: none;
+}
+
+.search-engine {
+  background: rgba(255, 255, 255, 0);
 }
 
 .containerAlpha {
@@ -136,4 +150,98 @@ html {
 
 .imageEditor {
   height: 300px;
+}
+
+.main-block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-block .header {
+  display: flex;
+  flex-direction: column;
+}
+.main-block .header .head-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.main-block .header .head-block .number-text {
+  font-weight: 600;
+  color: #252774;
+}
+.main-block .header .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.main-block .header .search .sear-block {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 70%;
+  background: #F1F1F1;
+  padding: 8px;
+  border-radius: 8px;
+}
+.main-block .header .search .sear-block .search-engine {
+  width: 100%;
+  font-weight: 500;
+}
+.main-block .header .search .location {
+  display: flex;
+  align-items: center;
+}
+.main-block .header .search .location .loca-city_text {
+  font-size: 8px;
+  font-weight: 600;
+  color: #252774;
+}
+.main-block .header .auth-block {
+  display: flex;
+  justify-content: space-between;
+  background: #8BC0F6;
+  padding: 0px 25px;
+}
+.main-block .header .auth-block .le-auto_block {
+  padding: 5px 0px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-block .header .auth-block .le-auto_block .text-auth {
+  color: #ffffff;
+  font-weight: 600;
+}
+.main-block .header .auth-block .le-auto_block .intro-text {
+  color: #ffffff;
+  font-size: 8px;
+}
+.main-block .header .auth-block .le-auto_block .entrance-bottom {
+  width: 50%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 3px;
+}
+.main-block .header .auth-block .le-auto_block .entrance-bottom .ent-text {
+  color: #8BC0F6;
+  font-weight: 500;
+  font-size: 8px;
+}
+.main-block .menu {
+  position: relative;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.main-block .menu .menu-carol {
+  width: 120%;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
