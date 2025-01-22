@@ -176,6 +176,166 @@ $white: #ffffff;
                 color: $dark-blue;
             }
         }
+        .pop-up {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.322);
+            justify-content: center;
+            align-items: center;
+            .wind {
+                display: flex;
+                flex-direction: column;
+                background: #fff;
+                padding: 40px;
+                gap: 25px;
+                border-radius: 5px;
+                box-shadow: 0 0 20px rgb(12, 12, 12);
+                .t-but {
+                    display: flex;
+                    align-items: self-start;
+                    justify-content: space-between;
+                    gap: 60px;
+                    p {
+                        text-align: left;
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: rgb(56, 56, 56);
+                    }
+                }
+                .poli {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    input {
+                        color: black;
+                        padding: 15px;
+                        border-radius: 3px;
+                        outline: 2px solid #d8d8d8;
+                        outline-offset: -2px;
+                    }
+                    .error {
+                        display: none;
+                        color: rgb(168, 168, 168);
+                        font-size: 14px;
+                        font-weight: 45 0;
+                    }
+                }
+                .ent-button {
+                    background: $dark-blue;
+                    padding: 15px;
+                    border-radius: 3px;
+                    transition: all 0.3s;
+                    text-align: center;
+                }
+                .ent-button:hover {
+                    background: $blue;
+                }
+                .reg-button {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        color: $dark-blue;
+                        font-weight: 600;
+                        transition: all 0.3s;
+                    }
+                }
+                .reg-button:active {
+                    p {
+                        color: $blue;
+                    }
+                }
+            }
+            .regist {
+                display: none;
+                flex-direction: column;
+                background: #fff;
+                padding: 40px;
+                gap: 25px;
+                border-radius: 5px;
+                box-shadow: 0 0 20px rgb(12, 12, 12);
+                .t-but {
+                    display: flex;
+                    align-items: self-start;
+                    justify-content: space-between;
+                    gap: 120px;
+                    p {
+                        text-align: left;
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: rgb(56, 56, 56);
+                    }
+                }
+                .poli {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    .input {
+                        color: black;
+                        padding: 15px;
+                        border-radius: 3px;
+                        outline: 2px solid #d8d8d8;
+                        outline-offset: -2px;
+                    }
+                    .error {
+                        display: none;
+                        color: rgb(168, 168, 168);
+                        font-size: 14px;
+                        font-weight: 45 0;
+                    }
+                }
+                .password-input {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px;
+                    border-radius: 3px;
+                    outline: 2px solid #d8d8d8;
+                    outline-offset: -2px;
+                    .pass {
+                        color: black;
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                .reg-button {
+                    background: $dark-blue;
+                    padding: 15px;
+                    border-radius: 3px;
+                    transition: all 0.3s;
+                    text-align: center;
+                }
+                .reg-button:hover {
+                    background: $blue;
+                }
+                .ent-button {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        color: $dark-blue;
+                        font-weight: 600;
+                        transition: all 0.3s;
+                    }
+                }
+                .ent-button:active {
+                    p {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+        .pop-up.openPop {
+            animation: framIn 0.4s ease-in-out;
+        }
+        .pop-up.closePop {
+            animation: framOut 0.4s ease-in-out;
+        }
         .search {
             display: flex;
             justify-content: space-between;
