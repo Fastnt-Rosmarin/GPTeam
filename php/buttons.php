@@ -5,6 +5,9 @@
 </form>
 <a href="./editor.php" class="buttonClass">Go to Editor</a>
 <a href="./pages.php" class="buttonClass">Go to Pages</a>
+<a href="./item_create.php" class="buttonClass">Go to Item Creator</a>
+<a href="./items.php" class="buttonClass">Go to Items</a>
+
 <?php
     if(isset($_POST['generate'])) {
         $value = rand(5, 15);

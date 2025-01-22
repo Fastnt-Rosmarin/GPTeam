@@ -3,16 +3,15 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Check if a file was uploaded
     if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
-        $uploadDir = '../uploads/'; // Specify the upload directory
-        $fileName = basename($_FILES['image']['name']);
-        $targetPath = $uploadDir . $fileName;
+        $uploadDir = '../uploads/';
+        $fileExtension = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+        $uniqueFileName = uniqid() . '_' . time() . '.' . $fileExtension;
+        $targetPath = $uploadDir . $uniqueFileName;
 
         // Move the uploaded file to the uploads directory
         if (move_uploaded_file($_FILES['image']['tmp_name'], $targetPath)) {
             // Return the URL of the uploaded image
-            //$imageUrl = 'http://' . $_SERVER['HTTP_HOST'] . '/GrandProm/blocks/' . $targetPath;
-            //temp url below
-            $imageUrl = 'http://' . $_SERVER['HTTP_HOST'] . '/uploads/' . $fileName;
+            $imageUrl = 'http://' . $_SERVER['HTTP_HOST'] . '/uploads/' . $uniqueFileName;
             $response = [
                 'success' => 1,
                 'file' => [
