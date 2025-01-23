@@ -36,7 +36,7 @@ let er_passreg = document.getElementById('er_passreg');
 // Ввойти в форму входа 
 // Открытие
 document.getElementById('open-end').addEventListener('click', function() {
-    var popup = document.querySelector('.pop-up');
+    var popup = document.querySelector('.auth');
     popup.style.display = 'flex';
     if (formreg.style.display == 'flex') {
         formreg.style.display = 'none';
@@ -62,7 +62,7 @@ document.getElementById('form-end').addEventListener('click', function() {
 const closeBtn = document.querySelectorAll('.clous-end')
 closeBtn.forEach(btn => {
     btn.addEventListener('click', function() {
-        var popup = document.querySelector('.pop-up');
+        var popup = document.querySelector('.auth');
         popup.classList.remove('openPop');
         popup.classList.add('closePop');
 
@@ -78,7 +78,7 @@ closeBtn.forEach(btn => {
 document.addEventListener('DOMContentLoaded', function() {
     const imageInput = document.getElementById('imageInput');
     const galleryImageInput = document.getElementById('galleryImageInput');
-    
+
     if (imageInput) {
         imageInput.addEventListener('change', function(e) {
             const file = e.target.files[0];
@@ -86,17 +86,17 @@ document.addEventListener('DOMContentLoaded', function() {
             formData.append('image', file);
 
             fetch('upload.php', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if(data.success) {
-                    const imagePreview = document.getElementById('imagePreview');
-                    imagePreview.innerHTML = `<img src="${data.file.url}" style="max-width: 300px; margin-top: 10px;">`;
-                    mainImageName = data.file.url;  // Set the main image URL here
-                }
-            });
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const imagePreview = document.getElementById('imagePreview');
+                        imagePreview.innerHTML = `<img src="${data.file.url}" style="max-width: 300px; margin-top: 10px;">`;
+                        mainImageName = data.file.url; // Set the main image URL here
+                    }
+                });
         });
     }
 
@@ -107,19 +107,20 @@ document.addEventListener('DOMContentLoaded', function() {
             formData.append('image', file);
 
             fetch('upload.php', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if(data.success) {
-                    uploadedImages.push(data.file.url);
-                    updateGallery();
-                }
-            });
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        uploadedImages.push(data.file.url);
+                        updateGallery();
+                    }
+                });
         });
     }
 });
+
 function addItemLine() {
     const itemStats = document.getElementById('itemStats');
     const newLine = document.createElement('div');
@@ -144,11 +145,11 @@ let currentImageIndex = 0;
 function updateGallery() {
     const galleryContainer = document.querySelector('.carousel-images');
     galleryContainer.innerHTML = '';
-    
+
     if (!uploadedImages || !Array.isArray(uploadedImages)) {
         uploadedImages = [];
     }
-    
+
     uploadedImages.forEach((image, index) => {
         const imageElement = document.createElement('div');
         imageElement.className = `carousel-image ${index === currentImageIndex ? 'active' : ''}`;
@@ -183,16 +184,16 @@ document.addEventListener('DOMContentLoaded', function() {
             formData.append('image', file);
 
             fetch('upload.php', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if(data.success) {
-                    uploadedImages.push(data.file.url);
-                    updateGallery();
-                }
-            });
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        uploadedImages.push(data.file.url);
+                        updateGallery();
+                    }
+                });
         });
     }
 
@@ -216,7 +217,7 @@ let mainImageName = '';
 function saveItem() {
     const title = document.querySelector('.item-title input').value;
     const type = document.querySelector('input[name="type"]:checked').value;
-    
+
     const lines = [];
     document.querySelectorAll('.item-line').forEach((line) => {
         const inputs = line.querySelectorAll('input');
@@ -240,22 +241,22 @@ function saveItem() {
     }
 
     fetch('save_item.php', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(requestData)
-    })
-    .then(response => response.text())
-    .then(rawResponse => {
-        const data = JSON.parse(rawResponse);
-        if (data.success) {
-            window.location.href = 'display_items.php';
-        } else {
-            console.log('Error:', data.message);
-        }
-    })
-    .catch((error) => {
-        console.log('Fetch error:', error);
-    });
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(requestData)
+        })
+        .then(response => response.text())
+        .then(rawResponse => {
+            const data = JSON.parse(rawResponse);
+            if (data.success) {
+                window.location.href = 'display_items.php';
+            } else {
+                console.log('Error:', data.message);
+            }
+        })
+        .catch((error) => {
+            console.log('Fetch error:', error);
+        });
 }
