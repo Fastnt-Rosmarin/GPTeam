@@ -23,7 +23,9 @@ function saveFunction() {
     });
 };
 
-// WIND
+<<
+<< << < HEAD: js / script.js
+    // WIND
 let formwind = document.getElementById('windform');
 let er_email = document.getElementById('er_email');
 let er_pass = document.getElementById('er_pass');
@@ -61,20 +63,22 @@ document.getElementById('form-end').addEventListener('click', function() {
 // Закрытие
 const closeBtn = document.querySelectorAll('.clous-end')
 closeBtn.forEach(btn => {
-    btn.addEventListener('click', function() {
-        var popup = document.querySelector('.auth');
-        popup.classList.remove('openPop');
-        popup.classList.add('closePop');
+        btn.addEventListener('click', function() {
+            var popup = document.querySelector('.auth');
+            popup.classList.remove('openPop');
+            popup.classList.add('closePop');
 
-        setTimeout(function() {
-            popup.style.display = 'none';
-            popup.classList.remove('closePop');
-            ClearForm();
-        }, 400);
+            setTimeout(function() {
+                popup.style.display = 'none';
+                popup.classList.remove('closePop');
+                ClearForm();
+            }, 400);
 
-        document.body.style.overflow = 'auto';
-    });
-})
+            document.body.style.overflow = 'auto';
+        });
+    }) ===
+    === = >>>
+    >>> > e1265206b6a7a83fcc1d9a4589f597049003b33e: js / script - test.js
 document.addEventListener('DOMContentLoaded', function() {
     const imageInput = document.getElementById('imageInput');
     const galleryImageInput = document.getElementById('galleryImageInput');
