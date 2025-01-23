@@ -238,7 +238,7 @@
   color: #252774;
 }
 .main-block .header .auth {
-  display: flex;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
