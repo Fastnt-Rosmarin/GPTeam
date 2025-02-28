@@ -34,17 +34,17 @@ document.addEventListener('DOMContentLoaded', function() {
             formData.append('image', file);
 
             fetch('upload.php', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        const imagePreview = document.getElementById('imagePreview');
-                        imagePreview.innerHTML = `<img src="${data.file.url}" style="max-width: 300px; margin-top: 10px;">`;
-                        mainImageName = data.file.url; // Set the main image URL here
-                    }
-                });
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const imagePreview = document.getElementById('imagePreview');
+                    imagePreview.innerHTML = `<img src="${data.file.url}" style="max-width: 300px; margin-top: 10px;">`;
+                    mainImageName = data.file.url;
+                }
+            });
         });
     }
 
@@ -109,9 +109,12 @@ function updateGallery() {
     });
 }
 
-// Call updateGallery when the page loads
 document.addEventListener('DOMContentLoaded', function() {
-    updateGallery();
+    // Initialize carousel with existing images
+    if (uploadedImages && uploadedImages.length > 0) {
+        currentImageIndex = 0;
+        updateGallery();
+    }
 });
 
 
@@ -175,15 +178,20 @@ function saveItem() {
         });
     });
 
+    // Get all current gallery images from the carousel
+    const currentGalleryImages = [];
+    document.querySelectorAll('.carousel-image img').forEach(img => {
+        currentGalleryImages.push(img.src);
+    });
+
     const requestData = {
         title: title,
-        main_image: mainImageName,
+        main_image: mainImageName || document.querySelector('#imagePreview img')?.src,
         type: type,
         lines: lines,
-        gallery: uploadedImages
+        gallery: uploadedImages.length > 0 ? uploadedImages : currentGalleryImages
     };
 
-    // Add itemId if it exists (editing mode)
     if (typeof itemId !== 'undefined') {
         requestData.itemId = itemId;
     }
