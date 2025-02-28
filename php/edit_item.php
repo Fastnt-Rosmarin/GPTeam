@@ -17,7 +17,7 @@ if(isset($_GET['id'])) {
 }
 ?>
 
-<div class="container">
+<div class="container-test">
     <div class="item-title">
         <input type="text" class="input" name="" placeholder="title" id="" value="<?php echo htmlspecialchars($item['name']); ?>">
     </div>
@@ -66,9 +66,10 @@ if(isset($_GET['id'])) {
         </div>
         <div id="imageGallery" class="carousel-container">
             <div class="carousel-images">
-                <?php foreach($gallery as $img): ?>
-                    <div class="carousel-image">
+                <?php foreach($gallery as $index => $img): ?>
+                    <div class="carousel-image <?php echo $index === 0 ? 'active' : ''; ?>">
                         <img src="<?php echo $img; ?>" alt="Gallery image">
+                        <button class="remove-image" onclick="removeImage(<?php echo $index; ?>)">×</button>
                     </div>
                 <?php endforeach; ?>
             </div>
