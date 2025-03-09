@@ -14,39 +14,9 @@
 <body>
     <!-- Главное -->
     <div class="main-block">
-        <div class="header">
-            <div class="head-block">
-                <a href="tel:8 927 211 66 50">
-                    <p class="number-text">8 927 211 66</p>
-                </a>
-                <img class="logo" src="../uploads/logo.svg" alt="" />
-                <a href="" id="swap-menu">
-                    <img class="" src="../uploads/menu.svg" alt="" />
-                </a>
-            </div>
-            <div class="search">
-                <div class="sear-block">
-                    <img class="sear-img" src="../uploads/magnifier.svg" alt="" />
-                    <input class="search-engine" id="" type="search" placeholder="Поиск по сайту">
-                </div>
-                <a class="location" href="">
-                    <img class="locat-img" src="../uploads/cursor.svg" alt="" />
-                    <p class="loca-city_text">Тольятти</p>
-                </a>
-            </div>
-            <div class="auth-block">
-                <div class="le-auto_block">
-                    <p class="text-auth">Личный кабинет</p>
-                    <p class="intro-text">Авторизируйтесь в личном кабинете чтобы получить больше доступа к нашему сайту!</p>
-                    <a class="entrance-bottom" id="open-end" href="#" type="button">
-                        <p class="ent-text">Войти</p>
-                    </a>
-                </div>
-                <img class="ri-auto_img" src="../uploads/castle.svg" alt="" />
-            </div>
-        </div>
+        <?php include('page/header.php'); ?>
         <div class="text-navigation">
-            <p id="text-nav"><a id="text-nav" href="../index.html">Главная /</a><a id="text-nav" href="catalog.html"> Каталог</a> / Карточка товаров</p>
+            <p id="text-nav"><a id="text-nav" href="../index.php">Главная /</a><a id="text-nav" href="catalog.php"> Каталог</a> / Карточка товаров</p>
             <div class="fat-block">
                 <p id="text-nav-fat">Станок для нанесения покрытий</p>
                 <a class="star-img" href=""><img src="../uploads/star.svg" alt=""></a>
@@ -173,77 +143,12 @@
             <p>Другие товары</p>
         </div>
         <div class="products-h">
-            <div class="product-one" id="prod-block">
-                <div class="le-prod_block">
-                    <p class="big-text_product">Модель - Dip Spin Coating Machine DST 300</p>
-                    <p class="small-text-product">Машина для нанесения покрытий погружением в центрифугу</p>
-                    <a class="but-prod_detal" href="">
-                        <p class="" id="">Подробнее</p>
-                    </a>
-                </div>
-                <div class="ri-prod_block">
-                    <img class="product_img" src="../uploads/machine.svg" alt="" />
-                </div>
-            </div>
-            <div class="product-two" id="prod-block">
-                <div class="le-prod_block">
-                    <p class="big-text_product">Модель - Dip Spin Coating Machine DST 300</p>
-                    <p class="small-text-product">Машина для нанесения покрытий погружением в центрифугу</p>
-                    <a class="but-prod_detal" href="">
-                        <p class="" id="">Подробнее</p>
-                    </a>
-                </div>
-                <div class="ri-prod_block">
-                    <img class="product_img" src="../uploads/machine.svg" alt="" />
-                </div>
-            </div>
+            <?php include('page/products-bench.php'); ?>
+            <?php include('page/products-bench.php'); ?>
         </div>
-        <div class="application">
-            <p class="appli-text">Оставить заявку</p>
-            <div class="fillong-fields">
-                <p id="fill-text">Введите ФИО</p>
-                <input class="fill-engine" id="" type="text" placeholder="">
-                <p id="fill-text">Введите e-mail</p>
-                <input class="fill-engine" id="" type="text" placeholder="">
-            </div>
-            <div class="checkbox-block">
-                <input type="checkbox" name="" id="">
-                <p class="check-text">Заполняя эти поля вы соглашаетесь на обработку ваших персональных данных</p>
-            </div>
-            <div class="appli-block">
-                <a href="#" class="appli-button">
-                    <p>Оставьте заявку</p>
-                </a>
-            </div>
-        </div>
-        <div class="maps">Карта</div>
-        <div class="footer">
-            <div class="foot-top">
-                <p class="oper-text">Режим работы</p>
-            </div>
-            <div class="foot-middle">
-                <div class="time-block" id="foot-elemets">
-                    <!-- *картинка -->
-                    <p class="time-text" id="middle-text">Пн-Пт с 8:00 до 18:00</p>
-                </div>
-                <div class="tel-block" id="foot-elemets">
-                    <!-- *картинка -->
-                    <p class="tel-text" id="middle-text">+8 999 999 99 99</p>
-                </div>
-                <div class="email-block" id="foot-elemets">
-                    <!-- *картинка -->
-                    <p class="email-text" id="middle-text">grandprom@gmail.com</p>
-                </div>
-                <div class="location-block" id="foot-elemets">
-                    <!-- *картинка -->
-                    <p class="location-text" id="middle-text">Россия, Самарская область, г. Тольятти, ул.Ленинградская, 15</p>
-                </div>
-            </div>
-            <div class="foot-bottom">
-                <p class="poli-priv_text" id="bottom-text">Политика конфиденциальности</p>
-                <p class="grand-text" id="bottom-text">©2025 ООО “ГРАНДПРОМ”</p>
-            </div>
-        </div>
+        <?php include('page/application.php'); ?>
+        <?php include('page/maps.php'); ?>
+        <?php include('page/footer.php'); ?>
     </div>
 </body>
 <script src="../js/script-main.js"></script>
