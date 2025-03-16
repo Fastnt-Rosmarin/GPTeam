@@ -16,23 +16,23 @@
     <div class="main-block">
         <?php include('page/header.php'); ?>
         <div class="menu">
-            <a href="page/catalog.php" class="сatolog" id="menu-block">
+            <a href="page/catalog.php" class="сatolog" id="menu--content">
                 <p class="text-bm">Каталог</p>
                 <img class="img-bm" src="uploads/book_icon.svg" alt="" />
             </a>
-            <a href="page/news.php" class="news" id="menu-block">
+            <a href="page/news.php" class="news" id="menu--content">
                 <p class="text-bm">Новости</p>
                 <img class="img-bm" src="uploads/megafon_icon.svg" alt="" />
             </a>
-            <a href="page/aboutus.php" class="aboutus" id="menu-block">
+            <a href="page/aboutus.php" class="aboutus" id="menu--content">
                 <p class="text-bm">О нас</p>
                 <img class="img-bm" src="uploads/handshake_icon.svg" alt="" />
             </a>
-            <a href="#" class="bookmarks" id="menu-block">
+            <a href="#" class="bookmarks" id="menu--content">
                 <p class="text-bm">Закладки</p>
                 <img class="img-bm" src="uploads/bookmark_icon.svg" alt="" />
             </a>
-            <a href="page/connection.php" class="contacts" id="menu-block">
+            <a href="page/connection.php" class="contacts" id="menu--content">
                 <p class="text-bm">Контакты</p>
                 <img class="img-bm" src="uploads/telephon_icon.svg" alt="" />
             </a>

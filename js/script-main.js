@@ -1,4 +1,4 @@
-// WIND
+///// WIND
 let formwind = document.getElementById('windform');
 let er_email = document.getElementById('er_email');
 let er_pass = document.getElementById('er_pass');
@@ -49,4 +49,66 @@ closeBtn.forEach(btn => {
 
         document.body.style.overflow = 'auto';
     });
-})
+});
+
+///// Открытие меню
+document.getElementById('swap-menu').addEventListener('click', function() {
+    var pop_menu = document.querySelector('.popup-block_menu');
+    pop_menu.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+
+});
+// Закрыть меню
+document.getElementById('clous_menu').addEventListener('click', function() {
+    var pop_menu = document.querySelector('.popup-block_menu');
+    pop_menu.style.display = 'none';
+    document.body.style.overflow = 'auto';
+});
+
+///// Открытие формы выбора года 
+document.getElementById('button-city').addEventListener('click', function() {
+    var pop_location = document.querySelector('.popup-block_city');
+    pop_location.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+});
+// Закрыть формы выбора года 
+document.getElementById('clous_city').addEventListener('click', function() {
+    var pop_location = document.querySelector('.popup-block_city');
+    pop_location.style.display = 'none';
+    document.body.style.overflow = 'auto';
+});
+
+
+///// Открытие блока ответа на вопросы
+document.querySelectorAll('.ques-plus_button').forEach(button => {
+    button.addEventListener('click', () => {
+        const quesBlock = button.closest('.ques-block');
+        const answer = quesBlock.querySelector('.ques-floating_block');
+        const isVisible = answer.style.display === 'block';
+
+        if (isVisible) {
+            answer.style.height = '0';
+            answer.style.padding = '0 20px';
+            setTimeout(() => {
+                answer.style.display = 'none';
+            }, 500); // Wait for the animation to finish before hiding the block
+        } else {
+            answer.style.display = 'block';
+            setTimeout(() => {
+                answer.style.height = 'auto';
+                answer.style.padding = '20px';
+            }, 10);
+        }
+    });
+});
+
+
+///// Раскрытие каталог товаров
+document.querySelector('.button-arrow_img').addEventListener('click', function() {
+    var productBlock = document.querySelector('.products-block_bench');
+    if (productBlock.style.display === 'none') {
+        productBlock.style.display = 'flex';
+        productBlock.style.height
+        productBlock.style.height = 'auto';
+    }
+});
