@@ -34,9 +34,9 @@
                 <?php include('page/products-bench.php'); ?>
                 <?php include('page/products-bench.php'); ?>
             </div>
-        </div>
-        <div class="arrow-block">
-            <button class="button-arrow_img"><img class="arrow-img" src="../uploads/arrow.svg" alt="" /></button>
+            <div class="arrow-block">
+                <button class="button-arrow_img" id="button-arrow"><img class="arrow-img" src="../uploads/arrow.svg" alt="" /></button>
+            </div>
         </div>
         <div class="products-v_pocr">
             <div class="text-category_pocr">

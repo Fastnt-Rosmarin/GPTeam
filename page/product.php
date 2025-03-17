@@ -95,19 +95,19 @@
                     <p class="product-line_left">Корпус машины</p>
                     <p class="product-line_right">Монтаж панели</p>
                 </div>
-            </div>
-            <div class="sketch_block">
-                <div class="sketch-name_block">
-                    <p class="sketch-name_text">Полное название товара:</p>
-                    <p class="sketch-dep_text">Модель - Dip Spin Coating Machine DS 250</p>
-                </div>
-                <div class="sketch-name_block">
-                    <p class="sketch-name_text">Краткое описание:</p>
-                    <p class="sketch-dep_text">Машина для нанесения покрытий погружением в центрифугу</p>
+                <div class="sketch_block">
+                    <div class="sketch-name_block">
+                        <p class="sketch-name_text">Полное название товара:</p>
+                        <p class="sketch-dep_text">Модель - Dip Spin Coating Machine DS 250</p>
+                    </div>
+                    <div class="sketch-name_block">
+                        <p class="sketch-name_text">Краткое описание:</p>
+                        <p class="sketch-dep_text">Машина для нанесения покрытий погружением в центрифугу</p>
+                    </div>
                 </div>
             </div>
             <div class="inverted-arrow_block">
-                <a href=""><img class="arrow-img" src="../uploads/arrow.svg" alt="" /></a>
+                <button class="button-arrow_img" id="button-inver"><img class="arrow-img" src="../uploads/arrow.svg" alt="" /></button>
             </div>
         </div>
         <div class="product-button_block">

@@ -51,6 +51,7 @@ closeBtn.forEach(btn => {
     });
 });
 
+
 ///// Открытие меню
 document.getElementById('swap-menu').addEventListener('click', function() {
     var pop_menu = document.querySelector('.popup-block_menu');
@@ -64,6 +65,7 @@ document.getElementById('clous_menu').addEventListener('click', function() {
     pop_menu.style.display = 'none';
     document.body.style.overflow = 'auto';
 });
+
 
 ///// Открытие формы выбора года 
 document.getElementById('button-city').addEventListener('click', function() {
@@ -104,11 +106,34 @@ document.querySelectorAll('.ques-plus_button').forEach(button => {
 
 
 ///// Раскрытие каталог товаров
-document.querySelector('.button-arrow_img').addEventListener('click', function() {
-    var productBlock = document.querySelector('.products-block_bench');
-    if (productBlock.style.display === 'none') {
-        productBlock.style.display = 'flex';
-        productBlock.style.height
-        productBlock.style.height = 'auto';
+document.getElementById('button-arrow').addEventListener('click', function() {
+    var prodblock = document.querySelector('.products-block_bench');
+    var arrowimg = document.querySelector('.arrow-img');
+
+    if (prodblock.style.display === 'flex') {
+        prodblock.style.display = 'none';
+        arrowimg.style.transform = 'rotate(0deg)';
+    } else {
+        arrowimg.style.transform = 'rotate(180deg)';
+        prodblock.style.display = 'flex';
+        prodblock.style.height = 'auto';
+        prodblock.style.gap = '15px';
+    }
+});
+
+
+///// Раскрытие каталог товаров
+document.getElementById('button-inver').addEventListener('click', function() {
+    var prodform = document.querySelector('.product-form_table');
+    var arrowimg = document.querySelector('.arrow-img');
+
+    if (prodform.style.height === '60px') {
+        prodform.style.height = '60px';
+        prodform.style.overflow = 'hidden';
+        arrowimg.style.transform = 'rotate(0deg)';
+    } else {
+        arrowimg.style.transform = 'rotate(180deg)';
+        prodform.style.height = 'auto';
+        prodform.style.overflow = 'auto';
     }
 });
