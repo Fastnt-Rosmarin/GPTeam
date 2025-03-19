@@ -3,7 +3,7 @@
     <div class="le-prod_block">
         <p class="big-text_product">Модель - Dip Spin Coating Machine DST 300</p>
         <p class="small-text-product">Машина для нанесения покрытий погружением в центрифугу</p>
-        <a class="but-prod_detal" href="../page/product.php">
+        <a class="but-prod_detal" href="product.php">
             <p class="" id="">Подробнее</p>
         </a>
     </div>

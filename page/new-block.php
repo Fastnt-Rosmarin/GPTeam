@@ -1,4 +1,4 @@
-<a class="block-new_info" href="../page/item.php">
+<a class="block-new_info" href="item.php">
                     <div class="info-block_left">
                         <p class="news-text_title">Новый ввоз станков!</p>
                         <p class="news-text_description">В нашей компании появился новый товар, а именно станки DS 250!</p>

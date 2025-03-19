@@ -14,7 +14,7 @@
 <body>
     <!-- Главное -->
     <div class="main-block">
-        <?php include('page/header.php'); ?>
+        <?php include('header.php'); ?>
         <div class="text-navigation">
             <p id="text-nav"><a id="text-nav" href="../index.php">Главная</a> / Каталог</p>
             <p id="text-nav-fat">Каталог товаров</p>
@@ -24,15 +24,15 @@
                 <img class="categ-img" src="../uploads/stanoc.svg" alt="" />
                 <p class="text-cat">Станки</p>
             </div>
-            <?php include('page/products-bench.php'); ?>
-            <?php include('page/products-bench.php'); ?>
-            <?php include('page/products-bench.php'); ?>
-            <?php include('page/products-bench.php'); ?>
+            <?php include('products-bench.php'); ?>
+            <?php include('products-bench.php'); ?>
+            <?php include('products-bench.php'); ?>
+            <?php include('products-bench.php'); ?>
             <div class="products-block_bench">
-                <?php include('page/products-bench.php'); ?>
-                <?php include('page/products-bench.php'); ?>
-                <?php include('page/products-bench.php'); ?>
-                <?php include('page/products-bench.php'); ?>
+                <?php include('products-bench.php'); ?>
+                <?php include('products-bench.php'); ?>
+                <?php include('products-bench.php'); ?>
+                <?php include('products-bench.php'); ?>
             </div>
             <div class="arrow-block">
                 <button class="button-arrow_img" id="button-arrow"><img class="arrow-img" src="../uploads/arrow.svg" alt="" /></button>
@@ -43,14 +43,14 @@
                 <img class="categ-img" src="../uploads/pocritio.svg" alt="" />
                 <p class="text-cat">Покрытие</p>
             </div>
-            <?php include('page/products-coating.php'); ?>
-            <?php include('page/products-coating.php'); ?>
-            <?php include('page/products-coating.php'); ?>
-            <?php include('page/products-coating.php'); ?>
+            <?php include('products-coating.php'); ?>
+            <?php include('products-coating.php'); ?>
+            <?php include('products-coating.php'); ?>
+            <?php include('products-coating.php'); ?>
         </div>
-        <?php include('page/application.php'); ?>
-        <?php include('page/maps.php'); ?>
-        <?php include('page/footer.php'); ?>
+        <?php include('application.php'); ?>
+        <?php include('maps.php'); ?>
+        <?php include('footer.php'); ?>
     </div>
 </body>
 <script src="../js/script-main.js"></script>

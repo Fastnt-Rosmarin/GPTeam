@@ -35,9 +35,9 @@
                 </a>
             </div>
         </div>
-        <?php include('page/application.php'); ?>
-        <?php include('page/maps.php'); ?>
-        <?php include('page/footer.php'); ?>
+        <?php include('application.php'); ?>
+        <?php include('maps.php'); ?>
+        <?php include('footer.php'); ?>
     </div>
 </body>
 <script src="../js/script-main.js"></script>

@@ -14,7 +14,7 @@
 <body>
     <!-- Главное -->
     <div class="main-block">
-        <?php include('page/header.php'); ?>
+        <?php include('header.php'); ?>
         <div class="text-navigation">
             <p id="text-nav"><a id="text-nav" href="../index.php">Главная /</a><a id="text-nav" href="news.php"> Новости</a> / Статься</p>
             <p id="text-nav-fat">Новый ввоз станков!</p>
@@ -37,14 +37,14 @@
         <div class="news_block">
             <p class="other-news_text">Другие новости</p>
             <div class="news_list">
-                <?php include('page/new-block.php'); ?>
-                <?php include('page/new-block.php'); ?>
-                <?php include('page/new-block.php'); ?>
+                <?php include('new-block.php'); ?>
+                <?php include('new-block.php'); ?>
+                <?php include('new-block.php'); ?>
             </div>
         </div>
-        <?php include('page/application.php'); ?>
-        <?php include('page/maps.php'); ?>
-        <?php include('page/footer.php'); ?>
+        <?php include('application.php'); ?>
+        <?php include('maps.php'); ?>
+        <?php include('footer.php'); ?>
     </div>
 </body>
 <script src="../js/script-main.js"></script>

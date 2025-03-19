@@ -14,7 +14,7 @@
 <body>
     <!-- Главное -->
     <div class="main-block">
-        <?php include('page/header.php'); ?>
+        <?php include('header.php'); ?>
         <div class="text-navigation">
             <p id="text-nav"><a id="text-nav" href="../index.php">Главная</a> / О нас</p>
             <p id="text-nav-fat">О нас</p>
@@ -73,9 +73,9 @@
                     </p>
                 </div>
             </div>
-            <?php include('page/application.php'); ?>
-            <?php include('page/maps.php'); ?>
-            <?php include('page/footer.php'); ?>
+            <?php include('application.php'); ?>
+            <?php include('maps.php'); ?>
+            <?php include('footer.php'); ?>
         </div>
 </body>
 <script src="../js/script-main.js"></script>

@@ -14,7 +14,7 @@
 <body>
     <!-- Главное -->
     <div class="main-block">
-        <?php include('page/header.php'); ?>
+        <?php include('header.php'); ?>
         <div class="text-navigation">
             <p id="text-nav"><a id="text-nav" href="../index.php">Главная /</a><a id="text-nav" href="catalog.php"> Каталог</a> / Карточка товаров</p>
             <div class="fat-block">
@@ -143,12 +143,12 @@
             <p>Другие товары</p>
         </div>
         <div class="products-h">
-            <?php include('page/products-bench.php'); ?>
-            <?php include('page/products-bench.php'); ?>
+            <?php include('products-bench.php'); ?>
+            <?php include('products-bench.php'); ?>
         </div>
-        <?php include('page/application.php'); ?>
-        <?php include('page/maps.php'); ?>
-        <?php include('page/footer.php'); ?>
+        <?php include('application.php'); ?>
+        <?php include('maps.php'); ?>
+        <?php include('footer.php'); ?>
     </div>
 </body>
 <script src="../js/script-main.js"></script>

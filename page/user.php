@@ -80,16 +80,16 @@
         <div class="save-products_block">
             <div class="save_list_block">
                 <div class="prod-maping_block">
-                    <?php include('page/products-bench.php'); ?>
+                    <?php include('products-bench.php'); ?>
                 </div>
                 <div class="prod-maping_block">
-                    <?php include('page/products-coating.php'); ?>
+                    <?php include('products-coating.php'); ?>
                 </div>
                 <div class="prod-maping_block">
-                    <?php include('page/products-coating.php'); ?>
+                    <?php include('products-coating.php'); ?>
                 </div>
                 <div class="prod-maping_block">
-                    <?php include('page/products-bench.php'); ?>
+                    <?php include('products-bench.php'); ?>
                 </div>
             </div>
         </div>
@@ -99,14 +99,14 @@
                 <p class="save-articles_text">Сохранённые статьи</p>
             </div>
             <div class="save_list_block">
-                <?php include('page/new-block.php'); ?>
-                <?php include('page/new-block.php'); ?>
-                <?php include('page/new-block.php'); ?>
+                <?php include('new-block.php'); ?>
+                <?php include('new-block.php'); ?>
+                <?php include('new-block.php'); ?>
             </div>
         </div>
-        <?php include('page/application.php'); ?>
-        <?php include('page/maps.php'); ?>
-        <?php include('page/footer.php'); ?>
+        <?php include('application.php'); ?>
+        <?php include('maps.php'); ?>
+        <?php include('footer.php'); ?>
     </div>
 </body>
 <script src="../js/script-main.js"></script>
