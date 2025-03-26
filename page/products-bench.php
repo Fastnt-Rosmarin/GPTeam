@@ -8,6 +8,6 @@
         </a>
     </div>
     <div class="ri-prod_block">
-        <img class="product_img" src="../uploads/machine.svg" alt="" />
+        <img class="product_img" src="../img/machine.svg" alt="" />
     </div>
 </div>

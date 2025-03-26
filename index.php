@@ -18,23 +18,23 @@
         <div class="menu">
             <a href="page/catalog.php" class="сatolog" id="menu--content">
                 <p class="text-bm">Каталог</p>
-                <img class="img-bm" src="uploads/book_icon.svg" alt="" />
+                <img class="img-bm" src="img/book_icon.svg" alt="" />
             </a>
             <a href="page/news.php" class="news" id="menu--content">
                 <p class="text-bm">Новости</p>
-                <img class="img-bm" src="uploads/megafon_icon.svg" alt="" />
+                <img class="img-bm" src="img/megafon_icon.svg" alt="" />
             </a>
             <a href="page/aboutus.php" class="aboutus" id="menu--content">
                 <p class="text-bm">О нас</p>
-                <img class="img-bm" src="uploads/handshake_icon.svg" alt="" />
+                <img class="img-bm" src="img/handshake_icon.svg" alt="" />
             </a>
             <a href="#" class="bookmarks" id="menu--content">
                 <p class="text-bm">Закладки</p>
-                <img class="img-bm" src="uploads/bookmark_icon.svg" alt="" />
+                <img class="img-bm" src="img/bookmark_icon.svg" alt="" />
             </a>
             <a href="page/connection.php" class="contacts" id="menu--content">
                 <p class="text-bm">Контакты</p>
-                <img class="img-bm" src="uploads/telephon_icon.svg" alt="" />
+                <img class="img-bm" src="img/telephon_icon.svg" alt="" />
             </a>
         </div>
         <div class="products-h">
@@ -44,13 +44,13 @@
         <p class="text-part" id="text-name_prod">Наши партнеры</p>
         <div class="partners">
             <div class="" id="part-block">
-                <img class="partnes-img" src="uploads/logo-effco.svg" alt="" />
+                <img class="partnes-img" src="img/logo-effco.svg" alt="" />
             </div>
             <div class="" id="part-block">
-                <img class="partnes-img" src="uploads/logo-effco.svg" alt="" />
+                <img class="partnes-img" src="img/logo-effco.svg" alt="" />
             </div>
             <div class="" id="part-block">
-                <img class="partnes-img" src="uploads/logo-effco.svg" alt="" />
+                <img class="partnes-img" src="img/logo-effco.svg" alt="" />
             </div>
         </div>
         <?php include('page/questions.php'); ?>

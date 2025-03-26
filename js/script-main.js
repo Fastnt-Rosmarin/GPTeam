@@ -86,16 +86,20 @@ document.querySelectorAll('.ques-plus_button').forEach(button => {
     button.addEventListener('click', () => {
         const quesBlock = button.closest('.ques-block');
         const answer = quesBlock.querySelector('.ques-floating_block');
+        const imgques = quesBlock.querySelector('.questions-img'); // Select the image inside the same ques-block
         const isVisible = answer.style.display === 'block';
 
         if (isVisible) {
             answer.style.height = '0';
             answer.style.padding = '0 20px';
+            imgques.src = '../img/plus_icon.svg';
             setTimeout(() => {
                 answer.style.display = 'none';
-            }, 500); // Wait for the animation to finish before hiding the block
+                imgques.src = '../img/plus_icon.svg';
+            }, 500);
         } else {
             answer.style.display = 'block';
+            imgques.src = '../img/minus_icon.svg';
             setTimeout(() => {
                 answer.style.height = 'auto';
                 answer.style.padding = '20px';
@@ -103,6 +107,7 @@ document.querySelectorAll('.ques-plus_button').forEach(button => {
         }
     });
 });
+
 
 
 ///// Раскрытие каталог товаров
@@ -123,17 +128,16 @@ document.getElementById('button-arrow').addEventListener('click', function() {
 
 
 ///// Раскрытие каталог товаров
-document.getElementById('button-inver').addEventListener('click', function() {
-    var prodform = document.querySelector('.product-form_table');
-    var arrowimg = document.querySelector('.arrow-img');
+document.getElementById('toggle-btn').addEventListener('click', function() {
+    var itemList = document.querySelector('.items-table');
+    var iconArrow = document.querySelector('.icon-arrow');
 
-    if (prodform.style.height === '60px') {
-        prodform.style.height = '60px';
-        prodform.style.overflow = 'hidden';
-        arrowimg.style.transform = 'rotate(0deg)';
+    if (itemList.style.display === 'flex') {
+        itemList.style.display = 'none';
+        iconArrow.style.transform = 'rotate(0deg)';
     } else {
-        arrowimg.style.transform = 'rotate(180deg)';
-        prodform.style.height = 'auto';
-        prodform.style.overflow = 'auto';
+        iconArrow.style.transform = 'rotate(180deg)';
+        itemList.style.display = 'flex';
+        itemList.style.gap = '15px';
     }
 });

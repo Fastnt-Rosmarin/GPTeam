@@ -21,7 +21,7 @@
         </div>
         <div class="products-v">
             <div class="text-category">
-                <img class="categ-img" src="../uploads/stanoc.svg" alt="" />
+                <img class="categ-img" src="../img/stanoc.svg" alt="" />
                 <p class="text-cat">Станки</p>
             </div>
             <?php include('products-bench.php'); ?>
@@ -35,12 +35,12 @@
                 <?php include('products-bench.php'); ?>
             </div>
             <div class="arrow-block">
-                <button class="button-arrow_img" id="button-arrow"><img class="arrow-img" src="../uploads/arrow.svg" alt="" /></button>
+                <button class="button-arrow_img" id="button-arrow"><img class="arrow-img" src="../img/arrow.svg" alt="" /></button>
             </div>
         </div>
         <div class="products-v_pocr">
             <div class="text-category_pocr">
-                <img class="categ-img" src="../uploads/pocritio.svg" alt="" />
+                <img class="categ-img" src="../img/pocritio.svg" alt="" />
                 <p class="text-cat">Покрытие</p>
             </div>
             <?php include('products-coating.php'); ?>

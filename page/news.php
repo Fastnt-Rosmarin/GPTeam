@@ -21,7 +21,7 @@
         </div>
         <div class="filter-year_block">
             <p class="year-block_text">2025 год</p>
-            <a class="filter_block" href=""><img src="../uploads/filter.svg" alt=""></a>
+            <a class="filter_block" href=""><img src="../img/filter.svg" alt=""></a>
         </div>
         <div class="news_block">
             <div class="news_list">

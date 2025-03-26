@@ -13,6 +13,6 @@
                     </div>
                 </div>
                 <div class="ri-prod_block">
-                    <img class="product_img" src="../uploads/pocr-ban.svg" alt="" />
+                    <img class="product_img" src="../img/pocr-ban.svg" alt="" />
                 </div>
             </div>

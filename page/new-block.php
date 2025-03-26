@@ -5,6 +5,6 @@
                         <p class="news-text_date">12.01.25</p>
                     </div>
                     <div class="info-block_right">
-                        <img src="../uploads/bookmarks.svg" alt="">
+                        <img src="../img/bookmarks.svg" alt="">
                     </div>
                 </a>

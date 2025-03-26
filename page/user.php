@@ -19,18 +19,18 @@
                 <a href="tel:8 927 211 66 50">
                     <p class="number-text">8 927 211 66</p>
                 </a>
-                <img class="logo" src="../uploads/logo.svg" alt="" />
+                <img class="logo" src="../img/logo.svg" alt="" />
                 <a href="" id="swap-menu">
-                    <img class="" src="../uploads/menu.svg" alt="" />
+                    <img class="" src="../img/menu.svg" alt="" />
                 </a>
             </div>
             <div class="search">
                 <div class="sear-block">
-                    <img class="sear-img" src="../uploads/magnifier.svg" alt="" />
+                    <img class="sear-img" src="../img/magnifier.svg" alt="" />
                     <input class="search-engine" id="" type="search" placeholder="Поиск по сайту">
                 </div>
                 <a class="location" href="">
-                    <img class="locat-img" src="../uploads/cursor.svg" alt="" />
+                    <img class="locat-img" src="../img/cursor.svg" alt="" />
                     <p class="loca-city_text">Тольятти</p>
                 </a>
             </div>
@@ -41,7 +41,7 @@
         <div class="personal-block">
             <div class="personal-cont_left">
                 <div class="personal-user_photo">
-                    <img src="../uploads/user.svg" alt="">
+                    <img src="../img/user.svg" alt="">
                 </div>
                 <div class="user-states_block">
                     <p class="user-text">Романов Вадим Владиславович</p>
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <a class="personal-cont-right" href="">
-                <img src="../uploads/paint.svg" alt="">
+                <img src="../img/paint.svg" alt="">
             </a>
         </div>
         <div class="personal-settings">
@@ -71,11 +71,11 @@
         </div>
         <div class="sorting-filter_block">
             <p class="sorting-filter_text">Сортировка закладок</p>
-            <a class="sorting_block" href=""><img src="../uploads/filter.svg" alt=""></a>
+            <a class="sorting_block" href=""><img src="../img/filter.svg" alt=""></a>
         </div>
         <div class="save-goods_block">
-            <img src="../uploads/bookmark_darkblue.svg" alt="">
-            <p class="save-goods_text">Сортировка закладок</p>
+            <img src="../img/bookmark_darkblue.svg" alt="">
+            <p class="save-goods_text">Сохраненный товары</p>
         </div>
         <div class="save-products_block">
             <div class="save_list_block">
@@ -95,7 +95,7 @@
         </div>
         <div class="save-paper_block">
             <div class="save-articles_block">
-                <img src="../uploads/bookmark_darkblue.svg" alt="">
+                <img src="../img/bookmark_darkblue.svg" alt="">
                 <p class="save-articles_text">Сохранённые статьи</p>
             </div>
             <div class="save_list_block">

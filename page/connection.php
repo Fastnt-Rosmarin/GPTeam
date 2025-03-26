@@ -19,18 +19,18 @@
                 <a href="tel:8 927 211 66 50">
                     <p class="number-text">8 927 211 66</p>
                 </a>
-                <img class="logo" src="../uploads/logo.svg" alt="" />
+                <img class="logo" src="../img/logo.svg" alt="" />
                 <a href="" id="swap-menu">
-                    <img class="" src="../uploads/menu.svg" alt="" />
+                    <img class="" src="../img/menu.svg" alt="" />
                 </a>
             </div>
             <div class="search">
                 <div class="sear-block">
-                    <img class="sear-img" src="../uploads/magnifier.svg" alt="" />
+                    <img class="sear-img" src="../img/magnifier.svg" alt="" />
                     <input class="search-engine" id="" type="search" placeholder="Поиск по сайту">
                 </div>
                 <a class="location" href="">
-                    <img class="locat-img" src="../uploads/cursor.svg" alt="" />
+                    <img class="locat-img" src="../img/cursor.svg" alt="" />
                     <p class="loca-city_text">Тольятти</p>
                 </a>
             </div>

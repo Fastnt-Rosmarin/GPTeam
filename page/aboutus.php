@@ -20,7 +20,7 @@
             <p id="text-nav-fat">О нас</p>
         </div>
         <div class="aboutus_block">
-            <img src="../uploads/image%20129.png" alt="">
+            <img src="../img/image%20129.png" alt="">
             <div class="aboutus-info_block">
                 <div class="aboutus-text_block">
                     <p class="text-info_aboutus">“ГРАНДПРОМ” - это динамично развивающееся промышленно-коммерческое предприятие, которое с момента своего основания в 2014 году играет ключевую роль в развитии автомобильной промышленности России. Компания специализируется на производстве
@@ -29,7 +29,7 @@
                         всеми крупными автосборочными заводами, расположенными на территории РФ, что свидетельствует о высоком уровне доверия и признании качества продукции.</p>
                 </div>
                 <div class="aboutus-quote_block">
-                    <img src="../uploads/handshake_white.svg" alt="">
+                    <img src="../img/handshake_white.svg" alt="">
                     <p class="text_quote_block">Сотрудничая с нами, вы получаете гарантированно выгодные условия, которые мы всегда готовы обсудить и адаптировать под ваши потребности. Мы ценим долгосрочные партнёрские отношения и стремимся к созданию взаимовыгодных решений, которые
                         способствуют успеху обеих сторон.</p>
                 </div>
@@ -43,21 +43,21 @@
                     <div class="feature-aboutus_circle">
                         <div class="feature-circle_block">
                             <div class="circle-feature_block">
-                                <img src="../uploads/plans.svg" alt="">
+                                <img src="../img/plans.svg" alt="">
                             </div>
                             <p class="text_feature">Экологичность</p>
                         </div>
                         <div class="feature_line"></div>
                         <div class="feature-circle_block">
                             <div class="circle-feature_block">
-                                <img src="../uploads/like.svg" alt="">
+                                <img src="../img/like.svg" alt="">
                             </div>
                             <p class="text_feature">Надежность</p>
                         </div>
                         <div class="feature_line"></div>
                         <div class="feature-circle_block">
                             <div class="circle-feature_block">
-                                <img src="../uploads/document.svg" alt="">
+                                <img src="../img/document.svg" alt="">
                             </div>
                             <p class="text_feature">Качество</p>
                         </div>

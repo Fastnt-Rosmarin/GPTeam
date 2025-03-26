@@ -20,7 +20,7 @@
             <p id="text-nav-fat">Новый ввоз станков!</p>
         </div>
         <div class="item_block">
-            <img src="../uploads/image%20129.png" alt="">
+            <img src="../img/image%20129.png" alt="">
             <div class="item-info_block">
                 <div class="item-text_block">
                     <p class="text-info_item">В нашей компании появился новый товар, а именно станки DS 250! Станок универсальный, качественный и имеет полуавтоматическую систему покраса. Такое оборудование подойдёт для тех клиентов, кому нужно покрасить металлические конструкции
@@ -30,7 +30,7 @@
                 </div>
                 <div class="item-date_block">
                     <p class="date-item">12.01.25</p>
-                    <img src="../uploads/bookmarks-ser.svg" alt="">
+                    <img src="../img/bookmarks-ser.svg" alt="">
                 </div>
             </div>
         </div>

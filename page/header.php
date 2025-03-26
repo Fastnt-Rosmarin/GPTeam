@@ -3,18 +3,18 @@
         <a href="tel:8 927 211 66 50">
             <p class="number-text">8 927 211 66</p>
         </a>
-        <a href="../index.php"><img class="logo" src="../uploads/logo.svg" alt="" /></a>
+        <a href="../index.php"><img class="logo" src="../img/logo.svg" alt="" /></a>
         <a href="#" id="swap-menu">
-            <img class="" src="../uploads/menu.svg" alt="" />
+            <img class="" src="../img/menu.svg" alt="" />
         </a>
     </div>
     <div class="search">
         <div class="sear-block">
-            <img class="sear-img" src="../uploads/magnifier.svg" alt="" />
+            <img class="sear-img" src="../img/magnifier.svg" alt="" />
             <input class="search-engine" id="" type="search" placeholder="Поиск по сайту">
         </div>
         <a class="location" id="button-city" href="#">
-            <img class="locat-img" src="../uploads/cursor.svg" alt="" />
+            <img class="locat-img" src="../img/cursor.svg" alt="" />
             <p class="loca-city_text">Тольятти</p>
         </a>
     </div>
@@ -26,7 +26,7 @@
                 <p class="ent-text">Войти</p>
             </a>
         </div>
-        <img class="ri-auto_img" src="../uploads/castle.svg" alt="" />
+        <img class="ri-auto_img" src="../img/castle.svg" alt="" />
     </div>
 </div>
 <!-- Меню -->
@@ -34,12 +34,12 @@
     <div class="block_menu">
         <div class="up-block_menu">
             <div class="block-menu-logo_img">
-                <img class="menu-logo_img" src="../uploads/logo.svg" alt="">
+                <img class="menu-logo_img" src="../img/logo.svg" alt="">
             </div>
             <a href="tel:8 927 211 66 50">
                 <p class="menu-text_num">8 927 211 66</p>
             </a>
-            <a href="#close" id="clous_menu"><img class="close-menu" src="../uploads/white-cross.svg" alt=""></a>
+            <a href="#close" id="clous_menu"><img class="close-menu" src="../img/white-cross.svg" alt=""></a>
         </div>
         <div class="botton-block_menu">
             <a href="#" class="text-bot_menu" type="button" id="open-end">Войти</a>
@@ -57,11 +57,11 @@
     <div class="block_city">
         <div class="up-block_city">
             <p>Ваш город</p>
-            <a class="clous-botton_city" id="clous_city" href="#"><img class="clous-city" src="../uploads/cross-grey.svg" alt="" /></a>
+            <a class="clous-botton_city" id="clous_city" href="#"><img class="clous-city" src="../img/cross-grey.svg" alt="" /></a>
         </div>
         <div class="botton-block_city">
             <div class="sear-block">
-                <img class="sear-img" src="../uploads/magnifier.svg" alt="" />
+                <img class="sear-img" src="../img/magnifier.svg" alt="" />
                 <input class="city-engine" id="" type="search" placeholder="Найти город">
             </div>
             <div class="form-block_city">
@@ -101,7 +101,7 @@
     <form action="" class="wind" id="windform" method="POST">
         <div class="t-but">
             <p>Войти в систему</p>
-            <a href="#close" class="clous-end"><img src="../uploads/cross.svg" alt="" /></a>
+            <a href="#close" class="clous-end"><img src="../img/cross.svg" alt="" /></a>
         </div>
         <div class="winform_poli">
             <div class="poli_block">
@@ -125,7 +125,7 @@
     <form action="" class="regist" id="regform" method="POST">
         <div class="t-but">
             <p>Регистрация</p>
-            <a href="#close" class="clous-end"><img src="../uploads/cross.svg" alt="" /></a>
+            <a href="#close" class="clous-end"><img src="../img/cross.svg" alt="" /></a>
         </div>
         <div class="regform_poli">
             <div class="poli_block">
@@ -143,7 +143,7 @@
             <div class="poli_block">
                 <div class="password-input">
                     <input class="repeat_pass" type="password" name="pass" id="pass" placeholder="Введите пароль" />
-                    <a href="#" id="Eaysclick"><img class="eays" id="openEays" src="../uploads/eaysclouse.svg" alt="" /></a>
+                    <a href="#" id="Eaysclick"><img class="eays" id="openEays" src="../img/eaysclouse.svg" alt="" /></a>
                 </div>
                 <p class="poli_error" id="er_passreg"></p>
             </div>
