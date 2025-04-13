@@ -15,13 +15,15 @@
     <!-- Главное -->
     <div class="main-block">
         <?php include('header.php'); ?>
-        <div class="text-navigation">
-            <p id="text-nav"><a id="text-nav" href="../index.php">Главная</a> / Новости</p>
-            <p id="text-nav-fat">Новости</p>
-        </div>
-        <div class="filter-year_block">
-            <p class="year-block_text">2025 год</p>
-            <a class="filter_block" href=""><img src="../img/filter.svg" alt=""></a>
+        <div class="news_adap">
+            <div class="text-navigation">
+                <p id="text-nav"><a id="text-nav" href="../index.php">Главная</a> / Новости</p>
+                <p id="text-nav-fat">Новости</p>
+            </div>
+            <div class="filter-year_block">
+                <p class="year-block_text">2025 год</p>
+                <a class="filter_block" href=""><img src="../img/filter.svg" alt=""></a>
+            </div>
         </div>
         <div class="news_block">
             <div class="news_list">
