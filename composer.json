@@ -6,10 +6,6 @@
             "email": "thegreattimofey.devyatkin@gmail.com"
         }
     ],
-    "require": {
-        "symfony/orm-pack": "^2.4"
-    },
-    "require-dev": {
-        "symfony/maker-bundle": "^1.62"
-    }
+    "require": {}
+
 }
