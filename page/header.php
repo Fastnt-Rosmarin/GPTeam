@@ -3,9 +3,9 @@
         <a href="tel:8 927 211 66 50">
             <p class="number-text">8 927 211 66</p>
         </a>
-        <a href="../index.php"><img class="logo" src="../img/logo.svg" alt="" /></a>
+        <a href="../index.php"><img class="logo_company" src="../img/logo.svg" alt="" /></a>
         <a href="#" id="swap-menu">
-            <img class="" src="../img/menu.svg" alt="" />
+            <img class="swap-menu_img" src="../img/menu.svg" alt="" />
         </a>
     </div>
     <div class="search">
@@ -18,15 +18,17 @@
             <p class="loca-city_text">Тольятти</p>
         </a>
     </div>
-    <div class="auth-block">
-        <div class="le-auto_block">
-            <p class="text-auth">Личный кабинет</p>
-            <p class="intro-text">Авторизируйтесь в личном кабинете чтобы получить больше доступа к нашему сайту!</p>
-            <a class="entrance-bottom" id="open-end" href="#" type="button">
-                <p class="ent-text">Войти</p>
-            </a>
+    <div class="auto-adap_block">
+        <div class="auth-block">
+            <div class="le-auto_block">
+                <p class="text-auth">Личный кабинет</p>
+                <p class="intro-text">Авторизируйтесь в личном кабинете чтобы получить больше доступа к нашему сайту!</p>
+                <a class="entrance-bottom" id="open-end" href="#" type="button">
+                    <p class="ent-text">Войти</p>
+                </a>
+            </div>
+            <img class="ri-auto_img" src="../img/castle.svg" alt="" />
         </div>
-        <img class="ri-auto_img" src="../img/castle.svg" alt="" />
     </div>
 </div>
 <!-- Меню -->
@@ -53,7 +55,7 @@
     </div>
 </div>
 <!-- Выбор города -->
- <div class="popup-block_city">
+<div class="popup-block_city">
     <div class="block_city">
         <div class="up-block_city">
             <p>Ваш город</p>
@@ -75,7 +77,7 @@
                         <img src="" alt="">
                     </div>
                     <div class="block-text_city" id="">
-                        <a class="text-city" href="">Самара</a> 
+                        <a class="text-city" href="">Самара</a>
                         <img src="" alt="">
                     </div>
                     <div class="block-text_city" id="">
@@ -94,7 +96,7 @@
             </div>
         </div>
     </div>
- </div>
+</div>
 <!-- Формы авторизации и регистрации -->
 <div class="pop-up">
     <!-- Вход -->

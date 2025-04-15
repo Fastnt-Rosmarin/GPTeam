@@ -15,12 +15,12 @@
     <!-- Главное -->
     <div class="main-block">
         <?php include('header.php'); ?>
-        <div class="text-navigation">
-            <p id="text-nav"><a id="text-nav" href="../index.php">Главная</a> / О нас</p>
-            <p id="text-nav-fat">О нас</p>
-        </div>
-        <div class="aboutus_block">
-            <img src="../img/image%20129.png" alt="">
+        <div class="aboutus_adap">
+            <div class="text-navigation">
+                <p id="text-nav"><a id="text-nav" href="../index.php">Главная</a> / О нас</p>
+                <p id="text-nav-fat">О нас</p>
+            </div>
+            <img class="aboutus_img" src="../img/image%20129.png" alt="">
             <div class="aboutus-info_block">
                 <div class="aboutus-text_block">
                     <p class="text-info_aboutus">“ГРАНДПРОМ” - это динамично развивающееся промышленно-коммерческое предприятие, которое с момента своего основания в 2014 году играет ключевую роль в развитии автомобильной промышленности России. Компания специализируется на производстве
@@ -73,9 +73,10 @@
                     </p>
                 </div>
             </div>
-            <?php include('application.php'); ?>
-            <?php include('maps.php'); ?>
-            <?php include('footer.php'); ?>
         </div>
+        <?php include('application.php'); ?>
+        <?php include('maps.php'); ?>
+        <?php include('footer.php'); ?>
+    </div>
 </body>
 <script src="../js/script-main.js"></script>

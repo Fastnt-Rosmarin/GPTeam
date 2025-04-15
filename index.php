@@ -15,42 +15,54 @@
     <!-- Главное -->
     <div class="main-block">
         <?php include('page/header.php'); ?>
-        <div class="menu">
-            <a href="page/catalog.php" class="сatolog" id="menu--content">
-                <p class="text-bm">Каталог</p>
-                <img class="img-bm" src="img/book_icon.svg" alt="" />
-            </a>
-            <a href="page/news.php" class="news" id="menu--content">
-                <p class="text-bm">Новости</p>
-                <img class="img-bm" src="img/megafon_icon.svg" alt="" />
-            </a>
-            <a href="page/aboutus.php" class="aboutus" id="menu--content">
-                <p class="text-bm">О нас</p>
-                <img class="img-bm" src="img/handshake_icon.svg" alt="" />
-            </a>
-            <a href="#" class="bookmarks" id="menu--content">
-                <p class="text-bm">Закладки</p>
-                <img class="img-bm" src="img/bookmark_icon.svg" alt="" />
-            </a>
-            <a href="page/connection.php" class="contacts" id="menu--content">
-                <p class="text-bm">Контакты</p>
-                <img class="img-bm" src="img/telephon_icon.svg" alt="" />
-            </a>
-        </div>
-        <div class="products-h">
-            <?php include('page/products-bench.php'); ?>
-            <?php include('page/products-bench.php'); ?>
-        </div>
-        <p class="text-part" id="text-name_prod">Наши партнеры</p>
-        <div class="partners">
-            <div class="" id="part-block">
-                <img class="partnes-img" src="img/logo-effco.svg" alt="" />
+        <div class="menu_adap">
+            <div class="menu">
+                <a href="page/catalog.php" class="сatolog" id="menu--content">
+                    <p class="text-bm">Каталог</p>
+                    <img class="img-bm" src="img/book_icon.svg" alt="" />
+                </a>
+                <a href="page/news.php" class="news" id="menu--content">
+                    <p class="text-bm">Новости</p>
+                    <img class="img-bm" src="img/megafon_icon.svg" alt="" />
+                </a>
+                <a href="page/aboutus.php" class="aboutus" id="menu--content">
+                    <p class="text-bm">О нас</p>
+                    <img class="img-bm" src="img/handshake_icon.svg" alt="" />
+                </a>
+                <a href="#" class="bookmarks" id="menu--content">
+                    <p class="text-bm">Закладки</p>
+                    <img class="img-bm" src="img/bookmark_icon.svg" alt="" />
+                </a>
+                <a href="page/connection.php" class="contacts" id="menu--content">
+                    <p class="text-bm">Контакты</p>
+                    <img class="img-bm" src="img/telephon_icon.svg" alt="" />
+                </a>
             </div>
-            <div class="" id="part-block">
-                <img class="partnes-img" src="img/logo-effco.svg" alt="" />
+        </div>
+        <div class="products-h_adap">
+            <div class="products-h">
+                <?php include('page/products-bench.php'); ?>
+                <?php include('page/products-bench.php'); ?>
             </div>
-            <div class="" id="part-block">
-                <img class="partnes-img" src="img/logo-effco.svg" alt="" />
+        </div>
+        <div class="partners_adap">
+            <p class="text-part" id="text-name_prod">Наши партнеры</p>
+            <div class="partners">
+                <div class="" id="part-block">
+                    <img class="partnes-img" src="img/logo-effco.svg" alt="" />
+                </div>
+                <div class="" id="part-block">
+                    <img class="partnes-img" src="img/logo-effco.svg" alt="" />
+                </div>
+                <div class="" id="part-block">
+                    <img class="partnes-img" src="img/logo-effco.svg" alt="" />
+                </div>
+                <div class="" id="part-block">
+                    <img class="partnes-img" src="img/logo-effco.svg" alt="" />
+                </div>
+                <div class="" id="part-block">
+                    <img class="partnes-img" src="img/logo-effco.svg" alt="" />
+                </div>
             </div>
         </div>
         <?php include('page/questions.php'); ?>

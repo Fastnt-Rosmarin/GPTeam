@@ -8,6 +8,8 @@ let er_fio = document.getElementById('er_fio');
 let er_number = document.getElementById('er_number');
 let er_emailreg = document.getElementById('er_emailreg');
 let er_passreg = document.getElementById('er_passreg');
+var clickEays = document.getElementById('Eaysclick');
+var imgEays = document.getElementById('openEays');
 // Ввойти в форму входа 
 // Открытие
 document.getElementById('open-end').addEventListener('click', function() {
@@ -33,6 +35,16 @@ document.getElementById('form-end').addEventListener('click', function() {
     formwind.style.display = 'flex';
     ClearForm();
 });
+// КДК
+clickEays.addEventListener('click', function() {
+    if (formreg.pass.type == 'password') {
+        formreg.pass.type = 'text';
+        imgEays.src = '../img/Eyse.svg'
+    } else {
+        formreg.pass.type = 'password';
+        imgEays.src = '../img/eaysclouse.svg'
+    }
+});
 // Закрытие
 const closeBtn = document.querySelectorAll('.clous-end')
 closeBtn.forEach(btn => {
@@ -57,12 +69,17 @@ document.getElementById('swap-menu').addEventListener('click', function() {
     var pop_menu = document.querySelector('.popup-block_menu');
     pop_menu.style.display = 'flex';
     document.body.style.overflow = 'hidden';
+    pop_menu.classList.add('openMenu');
 
 });
 // Закрыть меню
 document.getElementById('clous_menu').addEventListener('click', function() {
     var pop_menu = document.querySelector('.popup-block_menu');
-    pop_menu.style.display = 'none';
+    pop_menu.classList.add('closeMenu');
+    setTimeout(function() {
+        pop_menu.style.display = 'none';
+        pop_menu.classList.remove('closeMenu');
+    }, 400);
     document.body.style.overflow = 'auto';
 });
 
@@ -72,10 +89,12 @@ document.getElementById('button-city').addEventListener('click', function() {
     var pop_location = document.querySelector('.popup-block_city');
     pop_location.style.display = 'flex';
     document.body.style.overflow = 'hidden';
+    pop_location.classList.add('openCity');
 });
 // Закрыть формы выбора года 
 document.getElementById('clous_city').addEventListener('click', function() {
     var pop_location = document.querySelector('.popup-block_city');
+    pop_location.classList.add('openCity');
     pop_location.style.display = 'none';
     document.body.style.overflow = 'auto';
 });
