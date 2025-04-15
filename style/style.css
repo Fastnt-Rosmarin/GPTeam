@@ -1792,6 +1792,9 @@ body {
   .main-block .map {
     height: 790px;
   }
+  .main-block .map iframe {
+    height: 790px;
+  }
   .main-block .footer {
     align-items: center;
     padding: 20px 0;

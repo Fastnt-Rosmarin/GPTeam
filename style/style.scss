@@ -1828,6 +1828,9 @@ body {
         }
         .map {
             height: 790px; // не до деланно
+            iframe {
+                height: 790px;
+            }
         }
         .footer {
             align-items: center;
