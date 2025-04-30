@@ -261,6 +261,13 @@ $font-b: 10px;
             font-weight: 600;
             color: $dark-blue;
         }
+        .logo-compony_block {
+            display: flex;
+            gap: 5px;
+            .logo_company {
+                height: 47px;
+            }
+        }
     }
     .search {
         display: flex;
@@ -455,11 +462,17 @@ $font-b: 10px;
 }
 
 ///// Продукт ( вертикальная форма )
+.prod-bench_adap {
+    padding: 0px 10px 10px 0px;
+}
+
 .products-v {
+    max-height: 465px;
     display: flex;
     flex-direction: column;
-    padding: 0px 10px 10px 10px;
+    padding: 10px;
     gap: 15px;
+    overflow-x: auto;
     .text-category {
         display: flex;
         align-items: center;
@@ -744,14 +757,15 @@ body {
         min-width: 90%;
         display: flex;
         padding: 10px;
-        gap: 15px;
+        gap: 10px;
         overflow-x: auto;
         #part-block {
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 8px;
-            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+            .partnes-img {
+                width: 75px;
+            }
         }
     }
     .partners::-webkit-scrollbar {
@@ -1061,6 +1075,31 @@ body {
 }
 
 ///////////// Каталог //////////////////
+.button-block_catalog {
+    display: flex;
+    gap: 10px;
+    padding: 0px 10px 10px 10px;
+    .catalog-button_product {
+        width: 100%;
+        padding: 5px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #238af3;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.164);
+        background: $white;
+        font-size: $font-s;
+        font-weight: 600;
+        color: $blue;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    #materials-button {
+        background: $blue;
+        color: $white;
+    }
+}
+
 .arrow-block {
     width: 100%;
     display: flex;
@@ -1086,9 +1125,9 @@ body {
 }
 
 .products-v_pocr {
-    display: flex;
+    max-height: 465px;
+    display: none;
     flex-direction: column;
-    box-shadow: 0px 1px 35px rgba(0, 0, 0, 0.10);
     padding: 10px;
     gap: 15px;
     .text-category_pocr {
@@ -1589,9 +1628,12 @@ body {
                 .number-text {
                     font-size: 20px;
                 }
-                .logo_company {
-                    width: 88px;
-                    height: 69px;
+                .logo-compony_block {
+                    display: flex;
+                    gap: 10px;
+                    .logo_company {
+                        height: 69px;
+                    }
                 }
                 .swap-menu_img {
                     width: 50px;
@@ -1746,7 +1788,6 @@ body {
                     border-radius: 15px;
                     .partnes-img {
                         width: 215px;
-                        height: 100px;
                     }
                 }
             }
@@ -1874,7 +1915,6 @@ body {
             width: 1000px;
             gap: 30px;
             padding: 0px 0px 20px 0px;
-            background: linear-gradient(360deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0) 5%);
             .text-category {
                 gap: 20px;
                 .categ-img {

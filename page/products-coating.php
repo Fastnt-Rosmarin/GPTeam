@@ -6,10 +6,6 @@
             <a class="but-prod_pocr" href="">
                 <p class="" id="">Подробнее</p>
             </a>
-            <div class="le-block_color">
-                <p>Цвет:</p>
-                <div class="bl-color"></div>
-            </div>
         </div>
     </div>
     <div class="ri-prod_block">

@@ -3,7 +3,10 @@
         <a href="tel:8 927 211 66 50">
             <p class="number-text">8 927 211 66</p>
         </a>
-        <a href="../index.php"><img class="logo_company" src="../img/logo.svg" alt="" /></a>
+        <div class="logo-compony_block">
+            <a href="../index.php"><img class="logo_company" src="../img/logo.svg" alt="" /></a>
+            <a href="../index.php"><img class="logo_company" src="../img/logo-effco.svg" alt="" /></a>
+        </div>
         <a href="#" id="swap-menu">
             <img class="swap-menu_img" src="../img/menu.svg" alt="" />
         </a>

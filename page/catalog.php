@@ -20,30 +20,22 @@
                 <p id="text-nav"><a id="text-nav" href="../index.php">Главная</a> / Каталог</p>
                 <p id="text-nav-fat">Каталог товаров</p>
             </div>
-            <div class="products-v">
-                <div class="text-category">
-                    <img class="categ-img" src="../img/stanoc.svg" alt="" />
-                    <p class="text-cat">Станки</p>
-                </div>
-                <?php include('products-bench.php'); ?>
-                <?php include('products-bench.php'); ?>
-                <?php include('products-bench.php'); ?>
-                <?php include('products-bench.php'); ?>
-                <div class="products-block_bench">
-                    <?php include('products-bench.php'); ?> 
+            <div class="button-block_catalog">
+                <button class="catalog-button_product" id="materials-button">Материалы</button>
+                <button class="catalog-button_product" id="equipment-button">Оборудование</button>
+                <button class="catalog-button_product" id="tehnologe-button">Технология</button>
+            </div>
+            <div class="prod-bench_adap" id="prod-bench">
+                <div class="products-v">
                     <?php include('products-bench.php'); ?>
                     <?php include('products-bench.php'); ?>
                     <?php include('products-bench.php'); ?>
-                </div>
-                <div class="arrow-block">
-                    <button class="button-arrow_img" id="button-arrow"><img class="arrow-img" src="../img/arrow.svg" alt="" /></button>
+                    <?php include('products-bench.php'); ?>
+                    <?php include('products-bench.php'); ?>
                 </div>
             </div>
-            <div class="products-v_pocr">
-                <div class="text-category_pocr">
-                    <img class="categ-img" src="../img/pocritio.svg" alt="" />
-                    <p class="text-cat">Покрытие</p>
-                </div>
+            <div class="products-v_pocr" id="prod-coating">
+                <?php include('products-coating.php'); ?>
                 <?php include('products-coating.php'); ?>
                 <?php include('products-coating.php'); ?>
                 <?php include('products-coating.php'); ?>

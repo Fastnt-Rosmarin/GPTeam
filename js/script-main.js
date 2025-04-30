@@ -126,37 +126,3 @@ document.querySelectorAll('.ques-plus_button').forEach(button => {
         }
     });
 });
-
-
-
-///// Раскрытие каталог товаров
-document.getElementById('button-arrow').addEventListener('click', function() {
-    var prodblock = document.querySelector('.products-block_bench');
-    var arrowimg = document.querySelector('.arrow-img');
-
-    if (prodblock.style.display === 'flex') {
-        prodblock.style.display = 'none';
-        arrowimg.style.transform = 'rotate(0deg)';
-    } else {
-        arrowimg.style.transform = 'rotate(180deg)';
-        prodblock.style.display = 'flex';
-        prodblock.style.height = 'auto';
-        prodblock.style.gap = '15px';
-    }
-});
-
-
-///// Раскрытие каталог товаров
-document.getElementById('toggle-btn').addEventListener('click', function() {
-    var itemList = document.querySelector('.items-table');
-    var iconArrow = document.querySelector('.icon-arrow');
-
-    if (itemList.style.display === 'flex') {
-        itemList.style.display = 'none';
-        iconArrow.style.transform = 'rotate(0deg)';
-    } else {
-        iconArrow.style.transform = 'rotate(180deg)';
-        itemList.style.display = 'flex';
-        itemList.style.gap = '15px';
-    }
-});
