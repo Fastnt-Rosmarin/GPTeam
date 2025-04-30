@@ -21,30 +21,15 @@
                 <p id="text-nav-fat">Каталог товаров</p>
             </div>
             <div class="button-block_catalog">
-                <button class="catalog-button_product" id="materials-button">Материалы</button>
+                <button class="catalog-button_product active" id="materials-button">Материалы</button>
                 <button class="catalog-button_product" id="equipment-button">Оборудование</button>
                 <button class="catalog-button_product" id="tehnologe-button">Технология</button>
             </div>
-            <div class="prod-bench_adap" id="prod-bench">
-                <div class="products-v">
-                    <?php include('products-bench.php'); ?>
-                    <?php include('products-bench.php'); ?>
-                    <?php include('products-bench.php'); ?>
-                    <?php include('products-bench.php'); ?>
-                    <?php include('products-bench.php'); ?>
-                </div>
-            </div>
-            <div class="products-v_pocr" id="prod-coating">
-                <?php include('products-coating.php'); ?>
-                <?php include('products-coating.php'); ?>
-                <?php include('products-coating.php'); ?>
-                <?php include('products-coating.php'); ?>
-                <?php include('products-coating.php'); ?>
-            </div>
+            
+            <?php include('nothing_found.php'); ?> <!-- Блок "Ничего не найдена" -->
+            <?php include('application.php'); ?>
+            <?php include('maps.php'); ?>
+            <?php include('footer.php'); ?>
         </div>
-        <?php include('application.php'); ?>
-        <?php include('maps.php'); ?>
-        <?php include('footer.php'); ?>
-    </div>
 </body>
 <script src="../js/script-main.js"></script>

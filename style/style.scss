@@ -31,6 +31,12 @@ $font-b: 10px;
     background: #ffffff00;
 }
 
+// Выделение участков текста
+b {
+    font-weight: 650;
+    font-size: 8px;
+}
+
 // Анимация появления
 @keyframes framIn {
     from {
@@ -278,7 +284,7 @@ $font-b: 10px;
             display: flex;
             align-items: center;
             gap: 5px;
-            width: 70%;
+            width: 75%;
             background: #F1F1F1;
             padding: 8px;
             border-radius: 8px;
@@ -428,7 +434,6 @@ $font-b: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 15px 0px 0px;
     .but-prod_pocr {
         width: 45%;
         padding: 5px 0px;
@@ -488,6 +493,26 @@ $font-b: 10px;
         display: none;
         gap: 0;
         flex-direction: column;
+    }
+}
+
+///// Блок "Ничего не найдена"
+.nothing_found {
+    display: block;
+    padding: 25px;
+    .nothing-found_block {
+        height: 115px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #E9E9E9;
+        border-radius: 8px;
+        gap: 10px;
+        .nothing_text {
+            font-size: $font-b;
+            font-weight: 500;
+            color: #C3C3C3;
+        }
     }
 }
 
@@ -1094,7 +1119,7 @@ body {
         border-radius: 3px;
         cursor: pointer;
     }
-    #materials-button {
+    .active {
         background: $blue;
         color: $white;
     }
@@ -1127,6 +1152,7 @@ body {
 .products-v_pocr {
     max-height: 465px;
     display: none;
+    overflow-x: auto;
     flex-direction: column;
     padding: 10px;
     gap: 15px;
@@ -1467,15 +1493,13 @@ body {
         .user-states_block {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
             .user-text {
-                max-width: 100px;
                 font-size: $font-b;
                 color: $dark-blue;
                 font-weight: 600;
             }
             .states-text {
-                padding-top: 15px;
+                padding-top: 5px;
                 font-size: $font-s;
                 color: #D9D9D9;
             }
@@ -1591,7 +1615,7 @@ body {
     display: flex;
     flex-direction: column;
     background: #fff;
-    padding: 10px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
     gap: 10px;
     .save-articles_block {
         display: flex;

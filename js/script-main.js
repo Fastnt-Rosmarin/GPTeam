@@ -126,3 +126,25 @@ document.querySelectorAll('.ques-plus_button').forEach(button => {
         }
     });
 });
+
+
+function resetButtonStyles() {
+    var buttons = document.querySelectorAll('.catalog-button_product');
+    buttons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+}
+
+document.getElementById('materials-button').addEventListener('click', function() {
+    resetButtonStyles();
+    document.getElementById('materials-button').classList.add('active');
+    document.getElementById('prod-bench').style.display = 'flex';
+    document.getElementById('prod-coating').style.display = 'none';
+});
+
+document.getElementById('equipment-button').addEventListener('click', function() {
+    resetButtonStyles();
+    document.getElementById('equipment-button').classList.add('active');
+    document.getElementById('prod-bench').style.display = 'none';
+    document.getElementById('prod-coating').style.display = 'flex';
+});
