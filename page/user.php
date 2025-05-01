@@ -14,27 +14,7 @@
 <body>
     <!-- Главное -->
     <div class="main-block">
-        <div class="header">
-            <div class="head-block">
-                <a href="tel:8 927 211 66 50">
-                    <p class="number-text">8 927 211 66</p>
-                </a>
-                <a href="../index.php"><img class="logo_company" src="../img/logo.svg" alt="" /></a>
-                <a href="#" id="swap-menu">
-                    <img class="swap-menu_img" src="../img/menu.svg" alt="" />
-                </a>
-            </div>
-            <div class="search">
-                <div class="sear-block">
-                    <img class="sear-img" src="../img/magnifier.svg" alt="" />
-                    <input class="search-engine" id="" type="search" placeholder="Поиск по сайту">
-                </div>
-                <a class="location" id="button-city" href="#">
-                    <img class="locat-img" src="../img/cursor.svg" alt="" />
-                    <p class="loca-city_text">Тольятти</p>
-                </a>
-            </div>
-        </div>
+        <?php include('header-waf.php'); ?>
         <div class="personal_adap">
             <div class="text-navigation">
                 <p id="text-nav"><a id="text-nav" href="../index.php">Главная</a> / Личный кабинет</p>
@@ -72,7 +52,7 @@
             </div>
             <div class="sorting-filter_block">
                 <p class="sorting-filter_text">Сортировка закладок</p>
-                <a class="sorting_block" href=""><img src="../img/filter.svg" alt=""></a>
+                <a class="sorting_block" href="#" id=""><img src="../img/filter.svg" alt=""></a>
             </div>
             <div class="save-goods_block">
                 <img src="../img/bookmark_darkblue.svg" alt="">
@@ -96,7 +76,10 @@
             </div>
         </div>
         <div class="save-paper_block">
-              <!-- Добавить сортировку закладок -->
+            <div class="sorting-filter_block">
+                <p class="sorting-filter_text">Сортировка закладок</p>
+                <a class="sorting_block" href="#" id=""><img src="../img/filter.svg" alt=""></a>
+            </div>
             <div class="save-articles_block">
                 <img src="../img/bookmark_darkblue.svg" alt="">
                 <p class="save-articles_text">Сохранённые статьи</p>

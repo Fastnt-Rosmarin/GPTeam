@@ -21,18 +21,6 @@
             <p class="loca-city_text">Тольятти</p>
         </a>
     </div>
-    <div class="auto-adap_block">
-        <div class="auth-block">
-            <div class="le-auto_block">
-                <p class="text-auth">Личный кабинет</p>
-                <p class="intro-text">Авторизируйтесь в личном кабинете чтобы получить больше доступа к нашему сайту!</p>
-                <a class="entrance-bottom" id="open-end" href="#" type="button">
-                    <p class="ent-text">Войти</p>
-                </a>
-            </div>
-            <img class="ri-auto_img" src="../img/castle.svg" alt="" />
-        </div>
-    </div>
 </div>
 <!-- Меню -->
 <div class="popup-block_menu">

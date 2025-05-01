@@ -128,35 +128,23 @@ document.querySelectorAll('.ques-plus_button').forEach(button => {
 });
 
 
+function resetButtonStyles() {
+    var buttons = document.querySelectorAll('.catalog-button_product');
+    buttons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+}
 
-///// Раскрытие каталог товаров
-document.getElementById('button-arrow').addEventListener('click', function() {
-    var prodblock = document.querySelector('.products-block_bench');
-    var arrowimg = document.querySelector('.arrow-img');
-
-    if (prodblock.style.display === 'flex') {
-        prodblock.style.display = 'none';
-        arrowimg.style.transform = 'rotate(0deg)';
-    } else {
-        arrowimg.style.transform = 'rotate(180deg)';
-        prodblock.style.display = 'flex';
-        prodblock.style.height = 'auto';
-        prodblock.style.gap = '15px';
-    }
+document.getElementById('materials-button').addEventListener('click', function() {
+    resetButtonStyles();
+    document.getElementById('materials-button').classList.add('active');
+    document.getElementById('prod-bench').style.display = 'flex';
+    document.getElementById('prod-coating').style.display = 'none';
 });
 
-
-///// Раскрытие каталог товаров
-document.getElementById('toggle-btn').addEventListener('click', function() {
-    var itemList = document.querySelector('.items-table');
-    var iconArrow = document.querySelector('.icon-arrow');
-
-    if (itemList.style.display === 'flex') {
-        itemList.style.display = 'none';
-        iconArrow.style.transform = 'rotate(0deg)';
-    } else {
-        iconArrow.style.transform = 'rotate(180deg)';
-        itemList.style.display = 'flex';
-        itemList.style.gap = '15px';
-    }
+document.getElementById('equipment-button').addEventListener('click', function() {
+    resetButtonStyles();
+    document.getElementById('equipment-button').classList.add('active');
+    document.getElementById('prod-bench').style.display = 'none';
+    document.getElementById('prod-coating').style.display = 'flex';
 });

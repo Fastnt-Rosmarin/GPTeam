@@ -19,6 +19,11 @@ font-family: Arial;
   background: rgba(255, 255, 255, 0);
 }
 
+b {
+  font-weight: 650;
+  font-size: 8px;
+}
+
 @keyframes framIn {
   from {
     opacity: 0;
@@ -248,6 +253,13 @@ font-family: Arial;
   font-weight: 600;
   color: #252774;
 }
+.header .head-block .logo-compony_block {
+  display: flex;
+  gap: 5px;
+}
+.header .head-block .logo-compony_block .logo_company {
+  height: 47px;
+}
 .header .search {
   display: flex;
   justify-content: space-between;
@@ -258,7 +270,7 @@ font-family: Arial;
   display: flex;
   align-items: center;
   gap: 5px;
-  width: 70%;
+  width: 75%;
   background: #F1F1F1;
   padding: 8px;
   border-radius: 8px;
@@ -402,7 +414,6 @@ font-family: Arial;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 15px 0px 0px;
 }
 .le-prod_bl_bottom .but-prod_pocr {
   width: 45%;
@@ -435,11 +446,17 @@ font-family: Arial;
   border-radius: 3px;
 }
 
+.prod-bench_adap {
+  padding: 0px 10px 10px 0px;
+}
+
 .products-v {
+  max-height: 465px;
   display: flex;
   flex-direction: column;
-  padding: 0px 10px 10px 10px;
+  padding: 10px;
   gap: 15px;
+  overflow-x: auto;
 }
 .products-v .text-category {
   display: flex;
@@ -456,6 +473,25 @@ font-family: Arial;
   display: none;
   gap: 0;
   flex-direction: column;
+}
+
+.nothing_found {
+  display: block;
+  padding: 25px;
+}
+.nothing_found .nothing-found_block {
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #E9E9E9;
+  border-radius: 8px;
+  gap: 10px;
+}
+.nothing_found .nothing-found_block .nothing_text {
+  font-size: 10px;
+  font-weight: 500;
+  color: #C3C3C3;
 }
 
 .block-new_info {
@@ -717,15 +753,16 @@ body {
   min-width: 90%;
   display: flex;
   padding: 10px;
-  gap: 15px;
+  gap: 10px;
   overflow-x: auto;
 }
 .main-block .partners #part-block {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+}
+.main-block .partners #part-block .partnes-img {
+  width: 75px;
 }
 .main-block .partners::-webkit-scrollbar {
   display: none;
@@ -1032,6 +1069,31 @@ body {
   animation: framOut 0.4s ease-in-out;
 }
 
+.button-block_catalog {
+  display: flex;
+  gap: 10px;
+  padding: 0px 10px 10px 10px;
+}
+.button-block_catalog .catalog-button_product {
+  width: 100%;
+  padding: 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #238af3;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.164);
+  background: #ffffff;
+  font-size: 8px;
+  font-weight: 600;
+  color: #238af3;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.button-block_catalog .active {
+  background: #238af3;
+  color: #ffffff;
+}
+
 .arrow-block {
   width: 100%;
   display: flex;
@@ -1057,9 +1119,10 @@ body {
 }
 
 .products-v_pocr {
-  display: flex;
+  max-height: 465px;
+  display: none;
+  overflow-x: auto;
   flex-direction: column;
-  box-shadow: 0px 1px 35px rgba(0, 0, 0, 0.1);
   padding: 10px;
   gap: 15px;
 }
@@ -1396,16 +1459,14 @@ body {
 .personal-block .personal-cont_left .user-states_block {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 .personal-block .personal-cont_left .user-states_block .user-text {
-  max-width: 100px;
   font-size: 10px;
   color: #252774;
   font-weight: 600;
 }
 .personal-block .personal-cont_left .user-states_block .states-text {
-  padding-top: 15px;
+  padding-top: 5px;
   font-size: 8px;
   color: #D9D9D9;
 }
@@ -1518,7 +1579,7 @@ body {
   display: flex;
   flex-direction: column;
   background: #fff;
-  padding: 10px 10px 0px 10px;
+  padding: 0px 10px 0px 10px;
   gap: 10px;
 }
 .save-paper_block .save-articles_block {
@@ -1556,8 +1617,11 @@ body {
   .main-block .header .head-block .number-text {
     font-size: 20px;
   }
-  .main-block .header .head-block .logo_company {
-    width: 88px;
+  .main-block .header .head-block .logo-compony_block {
+    display: flex;
+    gap: 10px;
+  }
+  .main-block .header .head-block .logo-compony_block .logo_company {
     height: 69px;
   }
   .main-block .header .head-block .swap-menu_img {
@@ -1712,7 +1776,6 @@ body {
   }
   .main-block .partners_adap .partners #part-block .partnes-img {
     width: 215px;
-    height: 100px;
   }
   .main-block .partners_adap .partners::-webkit-scrollbar {
     display: flex;
@@ -1834,7 +1897,6 @@ body {
     width: 1000px;
     gap: 30px;
     padding: 0px 0px 20px 0px;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0) 5%);
   }
   .catalog_adap .products-v .text-category {
     gap: 20px;

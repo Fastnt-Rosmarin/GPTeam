@@ -49,19 +49,22 @@
             <p class="text-part" id="text-name_prod">Наши партнеры</p>
             <div class="partners">
                 <div class="" id="part-block">
-                    <img class="partnes-img" src="img/logo-effco.svg" alt="" />
+                    <img class="partnes-img" src="img/kardan.png" alt="" />
                 </div>
                 <div class="" id="part-block">
-                    <img class="partnes-img" src="img/logo-effco.svg" alt="" />
+                    <img class="partnes-img" src="img/LADa.png" alt="" />
                 </div>
                 <div class="" id="part-block">
-                    <img class="partnes-img" src="img/logo-effco.svg" alt="" />
+                    <img class="partnes-img" src="img/zip.png" alt="" />
                 </div>
                 <div class="" id="part-block">
-                    <img class="partnes-img" src="img/logo-effco.svg" alt="" />
+                    <img class="partnes-img" src="img/kardan.png" alt="" />
                 </div>
                 <div class="" id="part-block">
-                    <img class="partnes-img" src="img/logo-effco.svg" alt="" />
+                    <img class="partnes-img" src="img/LADa.png" alt="" />
+                </div>
+                <div class="" id="part-block">
+                    <img class="partnes-img" src="img/zip.png" alt="" />
                 </div>
             </div>
         </div>
