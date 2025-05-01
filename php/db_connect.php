@@ -8,7 +8,7 @@ $conn = new mysqli($db_host, $db_user, '', $db_name);
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 // Create articles table if it doesn't exist
-$sql = "CREATE TABLE IF NOT EXISTS articles (
+$sql = "CREATE TABLE IF NOT EXISTS article (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     content JSON NOT NULL,

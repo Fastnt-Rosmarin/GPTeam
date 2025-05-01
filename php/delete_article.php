@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['article_id'])) {
     $article_id = $_POST['article_id'];
     
     // First get the article content to find images
-    $stmt = $conn->prepare("SELECT content FROM articles WHERE id = ?");
+    $stmt = $conn->prepare("SELECT content FROM article WHERE id = ?");
     $stmt->bind_param("i", $article_id);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['article_id'])) {
     }
     
     // Now delete the article
-    $stmt = $conn->prepare("DELETE FROM articles WHERE id = ?");
+    $stmt = $conn->prepare("DELETE FROM article WHERE id = ?");
     $stmt->bind_param("i", $article_id);
     
     if ($stmt->execute()) {

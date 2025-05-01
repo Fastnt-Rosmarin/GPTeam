@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['article_id'])) {
     $title = $_POST['title'];
     $content = $_POST['content'];
     
-    $stmt = $conn->prepare("UPDATE articles SET title = ?, content = ? WHERE id = ?");
+    $stmt = $conn->prepare("UPDATE article SET title = ?, content = ? WHERE id = ?");
     $stmt->bind_param("ssi", $title, $content, $article_id);
     
     if ($stmt->execute()) {
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['article_id'])) {
     $stmt->close();
 } else if (isset($_GET['id'])) {
     $article_id = $_GET['id'];
-    $stmt = $conn->prepare("SELECT * FROM articles WHERE id = ?");
+    $stmt = $conn->prepare("SELECT * FROM article WHERE id = ?");
     $stmt->bind_param("i", $article_id);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -81,7 +81,7 @@ if (isset($_GET['id'])) {
   $news_id = $_GET['id'];
 
   // Запрос на выборку конкретной новости
-  $sql = "SELECT title, content FROM articles WHERE id = $news_id";
+  $sql = "SELECT title, content FROM article WHERE id = $news_id";
   $result = $conn->query($sql);
 
   if ($result->num_rows > 0) {

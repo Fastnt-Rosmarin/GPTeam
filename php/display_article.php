@@ -2,7 +2,7 @@
 include 'db_connect.php';
 include 'include.php';
 
-$query = "SELECT * FROM articles";
+$query = "SELECT * FROM article";
 $result = $conn->query($query);
 echo "<div class='article-container'>";
 while($row = $result->fetch_assoc()) {
