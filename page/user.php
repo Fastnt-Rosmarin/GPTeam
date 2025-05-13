@@ -52,7 +52,22 @@
             </div>
             <div class="sorting-filter_block">
                 <p class="sorting-filter_text">Сортировка закладок</p>
-                <a class="sorting_block" href="#" id=""><img src="../img/filter.svg" alt=""></a>
+                <button class="sorting_block" href="#" id="button-sorting"><img src="../img/filter.svg" alt=""></button>
+            </div>
+            <div class="sorting-popup_goods">
+                <div class="sort-form_goods">
+                    <div class="sort-top_form">
+                        <p class="sort-text_goods">
+                            Выберете товар
+                        </p>
+                        <button id="clous_sort" href="#"><img class="clous-city" src="../img/cross-grey.svg" alt="" /></button>
+                    </div>
+                    <div class="sort-bottom_form">
+                        <a href="#" class="sort-bottom_text" id="">Показать всё</a>
+                        <a href="#" class="sort-bottom_text" id="">Материалы</a>
+                        <a href="#" class="sort-bottom_text" id="">Оборудование</a>
+                    </div>
+                </div>
             </div>
             <div class="save-goods_block">
                 <img src="../img/bookmark_darkblue.svg" alt="">
@@ -75,11 +90,14 @@
                 </div>
             </div>
         </div>
-        <div class="save-paper_block">
+        <div class="adap-sorting-filter_block">
             <div class="sorting-filter_block">
                 <p class="sorting-filter_text">Сортировка закладок</p>
-                <a class="sorting_block" href="#" id=""><img src="../img/filter.svg" alt=""></a>
+                <button class="sorting_block" href="#" id="button-sort_year"><img src="../img/filter.svg" alt=""></button>
             </div>
+        </div>
+        <?php include('popup_year.php'); ?>
+        <div class="save-paper_block">
             <div class="save-articles_block">
                 <img src="../img/bookmark_darkblue.svg" alt="">
                 <p class="save-articles_text">Сохранённые статьи</p>

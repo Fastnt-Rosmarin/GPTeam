@@ -22,6 +22,22 @@
                     <p id="text-nav-fat">Станок для нанесения покрытий</p>
                     <a class="star-img" href=""><img src="../img/star.svg" alt=""></a>
                 </div>
+                <?php include('admin-popup_forms.php'); ?>
+                <div class="admin-product-edit_block">
+                    <button class="editor_block" id="editor_button">
+                        <img src="../img/pencil.svg" alt="" class="">
+                    </button>
+                    <div class="admin-menu-editor_block">
+                        <button class="redactor_block" id="redactor_button">
+                            <img src="../img/blue-pencil.svg" alt="" class="redactor-img">
+                            <p class="redactor-text">Редактировать</p>
+                        </button>
+                        <button class="delite_block" id="delite_button">
+                            <img src="../img/delite.svg" alt="" class="delite-img">
+                            <p class="delite-text">Удалить</p>
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="product-form">
                 <div class="product-form_img">
@@ -114,6 +130,12 @@
                 </div>
             </div>
             <div class="product-button_block">
+                <a class="admin-button_adding button-adding" id="adding-button">
+                    <img src="../img/plus-admin_icon.svg" alt="" class="plus-img">
+                    <p class="adding-prod_text">
+                        Добавить товар
+                    </p>
+                </a>
                 <a class="product-button_app" href="">
                     <p class="" id="">Оставить заявку</p>
                 </a>

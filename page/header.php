@@ -7,28 +7,28 @@
             <a href="../index.php"><img class="logo_company" src="../img/logo.svg" alt="" /></a>
             <a href="../index.php"><img class="logo_company" src="../img/logo-effco.svg" alt="" /></a>
         </div>
-        <a href="#" id="swap-menu">
+        <button id="swap-menu" type="button">
             <img class="swap-menu_img" src="../img/menu.svg" alt="" />
-        </a>
+        </button>
     </div>
     <div class="search">
         <div class="sear-block">
             <img class="sear-img" src="../img/magnifier.svg" alt="" />
             <input class="search-engine" id="" type="search" placeholder="Поиск по сайту">
         </div>
-        <a class="location" id="button-city" href="#">
+        <button class="location" id="button-city" type="button">
             <img class="locat-img" src="../img/cursor.svg" alt="" />
             <p class="loca-city_text">Тольятти</p>
-        </a>
+        </button>
     </div>
     <div class="auto-adap_block">
         <div class="auth-block">
             <div class="le-auto_block">
                 <p class="text-auth">Личный кабинет</p>
                 <p class="intro-text">Авторизируйтесь в личном кабинете чтобы получить больше доступа к нашему сайту!</p>
-                <a class="entrance-bottom" id="open-end" href="#" type="button">
+                <button class="entrance-bottom" id="open-end" type="button">
                     <p class="ent-text">Войти</p>
-                </a>
+                </button>
             </div>
             <img class="ri-auto_img" src="../img/castle.svg" alt="" />
         </div>
@@ -44,7 +44,7 @@
             <a href="tel:8 927 211 66 50">
                 <p class="menu-text_num">8 927 211 66</p>
             </a>
-            <a href="#close" id="clous_menu"><img class="close-menu" src="../img/white-cross.svg" alt=""></a>
+            <button id="clous_menu" type="button"><img class="close-menu" src="../img/white-cross.svg" alt=""></button>
         </div>
         <div class="botton-block_menu">
             <a href="#" class="text-bot_menu" type="button" id="open-end">Войти</a>
@@ -63,7 +63,7 @@
     <div class="block_city">
         <div class="up-block_city">
             <p>Ваш город</p>
-            <a class="clous-botton_city" id="clous_city" href="#"><img class="clous-city" src="../img/cross-grey.svg" alt="" /></a>
+            <button class="clous-botton_city" id="clous_city" type="button"><img class="clous-city" src="../img/cross-grey.svg" alt="" /></button>
         </div>
         <div class="botton-block_city">
             <div class="sear-block">
@@ -107,7 +107,7 @@
     <form action="" class="wind" id="windform" method="POST">
         <div class="t-but">
             <p>Войти в систему</p>
-            <a href="#close" class="clous-end"><img src="../img/cross.svg" alt="" /></a>
+            <button class="clous-end" type="button"><img src="../img/cross.svg" alt="" /></button>
         </div>
         <div class="winform_poli">
             <div class="poli_block">
@@ -121,9 +121,9 @@
             <p class="pass-reco_text"> <a class="pass-reco_text" id="pass-reco_link" href="">Забыли пароль? </a>Ничего страшного мы поможем его<br />востановить!</p>
             <button type="submit" class="button_auth" onclick="">Войти</button>
             <div class="text-but_transition">
-                <a href="#registrarion" id="open-regist" type="button">
+                <button id="open-regist" type="button">
                     <p>Регистрация</p>
-                </a>
+                </button>
             </div>
         </div>
     </form>
@@ -131,7 +131,7 @@
     <form action="" class="regist" id="regform" method="POST">
         <div class="t-but">
             <p>Регистрация</p>
-            <a href="#close" class="clous-end"><img src="../img/cross.svg" alt="" /></a>
+            <button class="clous-end" type="button"><img src="../img/cross.svg" alt="" /></button>
         </div>
         <div class="regform_poli">
             <div class="poli_block">
@@ -159,9 +159,9 @@
             </div>
             <button type="submit" class="button_auth" onclick="">Зарегистрироваться</button>
             <div class="text-but_transition">
-                <a href="#entrance" id="form-end">
+                <button id="form-end" type="button">
                     <p>Войти</p>
-                </a>
+                </button>
             </div>
         </div>
     </form>
