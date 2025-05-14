@@ -2221,6 +2221,127 @@ body {
     }
 }
 
+.edit-product-selecting_block {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+    .edit-name-product-text {
+        padding: 5px 10px;
+        border: 1px solid #DADADA;
+        border-radius: 3px;
+        font-size: $font-b;
+        font-weight: 500;
+        color: $dark-blue;
+    }
+    .edit-product-img_block {
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .edit-product-img {
+            height: 175px;
+        }
+    }
+    .edit-charact-product-block {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        gap: 10px;
+        .edit-value-string {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+            .edit-product-parameters-text {
+                width: 60%;
+                padding: 5px 10px;
+                border: 1px solid #DADADA;
+                border-radius: 3px;
+                font-size: $font-b;
+                font-weight: 500;
+                color: $dark-blue;
+            }
+            .edit-product-value-block {
+                width: 40%;
+                height: 25px;
+                padding: 5px 10px;
+                line-height: 13px;
+                box-sizing: border-box;
+                border: 1px solid #DADADA;
+                border-radius: 3px;
+                font-size: $font-s;
+                font-weight: 500;
+                color: #7B7B7B;
+            }
+        }
+    }
+    .edit-name-product_block {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-top: 1px solid #DADADA;
+        border-bottom: 1px solid #DADADA;
+        .edit-name-product_text {
+            font-size: $font-b;
+            font-weight: 500;
+            color: $dark-blue;
+        }
+        .edit-name-info_block {
+            height: 25px;
+            line-height: 13px;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            border: 1px solid #DADADA;
+            border-radius: 3px;
+            font-size: $font-s;
+            font-weight: 500;
+            color: #7B7B7B;
+        }
+    }
+    .edit-button_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 40px;
+        gap: 20px;
+        .edit-prepared-button {
+            padding: 5px 0px;
+            width: 35%;
+            border: 1px solid $blue;
+            border-radius: 3px;
+            font-size: $font-b;
+            font-weight: 500;
+            color: $blue;
+        }
+        .edit-cancellation-button {
+            padding: 5px 0px;
+            width: 35%;
+            border: 1px solid #DADADA;
+            border-radius: 3px;
+            font-size: $font-b;
+            font-weight: 500;
+            color: #DADADA;
+        }
+    }
+}
+
+#edit-product_form {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px 10px;
+    width: 150px;
+    border: 1px solid #DADADA;
+    border-radius: 3px;
+    font-size: $font-b;
+    font-weight: 500;
+    color: #7B7B7B;
+}
+
 ///// Адаптив /////
 @media (min-width: 1024px) {
     ///// Главная страница
