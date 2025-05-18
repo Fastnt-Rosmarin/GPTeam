@@ -26,12 +26,12 @@
                 <button class="catalog-button_product" id="tehnologe-button">Технология</button>
             </div>
             <div class="admin-adding-products-block">
-                <button class="admin-button_adding" id="adding-button">
+                <a class="admin-button_adding" id="adding-button" href="creation-product.php">
                     <img src="../img/plus-admin_icon.svg" alt="" class="plus-img">
                     <p class="adding-prod_text">
                         Добавить товар
                     </p>
-                </button>
+                </a>
             </div>
             <div class="prod-bench_adap" id="prod-bench">
                 <div class="products-v">

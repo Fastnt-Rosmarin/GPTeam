@@ -6,10 +6,17 @@ const eyeClick = document.getElementById('Eaysclick');
 const eyeImg = document.getElementById('openEays');
 const passInput = document.querySelector('#regform input[name="pass"]');
 
-// Очистка формы (заполни свою функцию)
-function ClearForm() {
-    // Пример: document.querySelectorAll('input').forEach(i => i.value = '');
-}
+// Подлкючение плагина
+document.addEventListener('DOMContentLoaded', () => {
+    const element = document.getElementById('choices-select');
+    if (element) {
+        const choices = new Choices(element, {
+            searchEnabled: false,
+            itemSelectText: '',
+            placeholderValue: 'Выберите категорию'
+        });
+    }
+});
 
 // Универсальная функция для показа/скрытия блоков
 function togglePopup(id, className, open = true) {
@@ -28,6 +35,74 @@ function togglePopup(id, className, open = true) {
             document.body.style.overflow = 'auto';
         }
     }
+}
+
+// Закрытие форм
+document.querySelectorAll('.clous-end').forEach(btn => {
+    btn.addEventListener('click', () => {
+        popup.classList.remove('openPop');
+        popup.classList.add('closePop');
+        setTimeout(() => {
+            popup.style.display = 'none';
+            popup.classList.remove('closePop');
+            ClearForm();
+        }, 400);
+        document.body.style.overflow = 'auto';
+    });
+});
+
+document.getElementById('clous-end').addEventListener('click', () => {
+    const popup = document.querySelector('.popup-clarification_block'); // Селектор для попапа
+    if (popup) {
+        popup.classList.remove('openPopUp');
+        popup.classList.add('closePopUp');
+        setTimeout(() => {
+            popup.style.display = 'none';
+            popup.classList.remove('closePopUp');
+            ClearForm(); // Очищаем форму, если нужно
+        }, 400);
+        document.body.style.overflow = 'auto';
+    }
+});
+
+document.getElementById('clous-clar').addEventListener('click', () => {
+    const popup_clar = document.querySelector('.popup-clarification-delite_block'); // Селектор для попапа
+    if (popup_clar) {
+        popup_clar.classList.remove('openPopUp');
+        popup_clar.classList.add('closePopUp');
+        setTimeout(() => {
+            popup_clar.style.display = 'none';
+            popup_clar.classList.remove('closePopUp');
+            ClearForm(); // Очищаем форму, если нужно
+        }, 400);
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Меню, город, товар, год — универсально
+[
+    ['swap-menu', '.popup-block_menu', 'openPopUp', 'clous_menu'],
+    ['button-city', '.popup-block_city', 'openPopUp', 'clous_city'],
+    ['button-sorting', '.sorting-popup_goods', 'openPopUp', 'clous_sort'],
+    ['button-sort_year', '.sorting-popup_year', 'openPopUp', 'clous_year'],
+    ['button-save', '.popup-clarification_block', 'openPopUp', 'clous-cancel'],
+    ['delite_button', '.popup-clarification-delite_block', 'openPopUp', 'clous-delit'],
+].forEach(([openId, blockSelector, openClass, closeId]) => {
+    const openButton = document.getElementById(openId);
+    const closeButton = document.getElementById(closeId);
+
+    if (openButton) {
+        openButton.addEventListener('click', () => togglePopup(blockSelector, openClass, true));
+    }
+
+    if (closeButton) {
+        closeButton.addEventListener('click', () => togglePopup(blockSelector, openClass, false));
+    }
+});
+
+// Очистка формы (заполни свою функцию)
+function ClearForm() {
+    popup.querySelectorAll('input').forEach(i => i.value = '');
 }
 
 // Открытие/закрытие формы входа и регистрации
@@ -63,20 +138,6 @@ eyeClick.addEventListener('click', () => {
     }
 });
 
-// Закрытие форм
-document.querySelectorAll('.clous-end').forEach(btn => {
-    btn.addEventListener('click', () => {
-        popup.classList.remove('openPop');
-        popup.classList.add('closePop');
-        setTimeout(() => {
-            popup.style.display = 'none';
-            popup.classList.remove('closePop');
-            ClearForm();
-        }, 400);
-        document.body.style.overflow = 'auto';
-    });
-});
-
 // Переключение материалов/покрытий
 document.querySelectorAll('.catalog-button_product').forEach(button => {
     button.addEventListener('click', () => {
@@ -91,7 +152,6 @@ document.querySelectorAll('.catalog-button_product').forEach(button => {
         document.getElementById('prod-technology').style.display = (id === 'tehnologe-button') ? 'flex' : 'none';
     });
 });
-
 
 // Ответы на вопросы
 document.querySelectorAll('.ques-plus_button').forEach(button => {
@@ -117,13 +177,42 @@ document.querySelectorAll('.ques-plus_button').forEach(button => {
     });
 });
 
-// Меню, город, товар, год — универсально
-[
-    ['swap-menu', '.popup-block_menu', 'openMenu', 'clous_menu'],
-    ['button-city', '.popup-block_city', 'openCity', 'clous_city'],
-    ['button-sorting', '.sorting-popup_goods', 'openGoods', 'clous_sort'],
-    ['button-sort_year', '.sorting-popup_year', 'openYear', 'clous_year'],
-].forEach(([openId, blockSelector, openClass, closeId]) => {
-    document.getElementById(openId).addEventListener('click', () => togglePopup(blockSelector, openClass, true));
-    document.getElementById(closeId).addEventListener('click', () => togglePopup(blockSelector, openClass, false));
+// Открыть / закрыть форму редактирования
+document.querySelectorAll('.editor_block').forEach(button => {
+    button.addEventListener('click', () => {
+        const form = button.parentElement.querySelector('.admin-menu-editor_block');
+        if (!form) return;
+        const isVisible = form.style.display === 'flex';
+        document.querySelectorAll('.admin-menu-editor_block').forEach(f => {
+            f.style.display = 'none';
+        });
+        if (!isVisible) {
+            form.style.display = 'flex';
+        }
+    });
 });
+
+// Функция для обновления текста ошибки
+function updateErrorText(errorType) {
+    const errorText = document.querySelector('.error-clar-text');
+    switch (errorType) {
+        case 'saveChanges':
+            errorText.textContent = 'Сохранить изменения?';
+            break;
+        case 'unsavedChanges':
+            errorText.textContent = 'Есть несохраненные изменения. Сохранить?';
+            break;
+        case 'connectionError':
+            errorText.textContent = 'Ошибка соединения. Попробуйте снова.';
+            break;
+        case 'unknownError':
+            errorText.textContent = 'Произошла неизвестная ошибка. Попробуйте позже.';
+            break;
+        default:
+            errorText.textContent = 'Неизвестная ошибка.';
+            break;
+    }
+}
+
+// Пример использования
+updateErrorText('connectionError'); // Текст изменится на "Ошибка соединения. Попробуйте снова."

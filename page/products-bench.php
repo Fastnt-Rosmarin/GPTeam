@@ -14,10 +14,10 @@
                 <img src="../img/pencil.svg" alt="" class="">
             </button>
             <div class="admin-menu-editor_block">
-                <button class="redactor_block" id="redactor_button">
+                <a class="redactor_block" id="redactor_button" href="../page/editing-product.php"> <!-- Решить проблему с путями -->
                     <img src="../img/blue-pencil.svg" alt="" class="redactor-img">
                     <p class="redactor-text">Редактировать</p>
-                </button>
+                </a>
                 <button class="delite_block" id="delite_button">
                     <img src="../img/delite.svg" alt="" class="delite-img">
                     <p class="delite-text">Удалить</p>

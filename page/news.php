@@ -24,6 +24,14 @@
                 <p class="year-block_text">2025 год</p>
                 <a class="filter_block" href=""><img src="../img/filter.svg" alt=""></a>
             </div>
+            <div class="admin-adding-products-block">
+                <a class="admin-button_adding" id="adding-button" href="creation-news.php">
+                    <img src="../img/plus-admin_icon.svg" alt="" class="plus-img">
+                    <p class="adding-prod_text">
+                        Добавить статью
+                    </p>
+                </a>
+            </div>
         </div>
         <div class="news_block">
             <div class="news_list">

@@ -8,16 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <title>Редактирование</title>
 </head>
 
 <body>
     <div class="main-block">
         <div class="edit-product-selecting_block">
-            <select name="edit-product_block" id="edit-product_form" required>
-                <option value="Выберите категорию" disabled selected hidden>Выберите категорию</option>
+            <select id="choices-select">
                 <option value="Материалы">Материалы</option>
-                <option value="Оборудование">Оборудование</option>
+                <option value="Оборудование" selected hidden>Оборудование</option>
             </select>
             <p class="edit-name-product-text">Станок для нанасение покрытий </p>
             <div class="edit-product-img_block">
@@ -134,8 +135,9 @@
                 <textarea class="edit-name-info_block">Машина для нанесения покрытий погружением в центрифугу</textarea>
             </div>
             <div class="edit-button_block">
-                <button class="edit-prepared-button">Готово</button>
-                <button class="edit-cancellation-button">Отмена</button>
+                <button class="edit-prepared-button" id="button-save" type="button">Готово</button>
+                <a class="edit-cancellation-button" href="product.php">Отмена</a>
+                <?php include('admin-popup_forms.php'); ?>
             </div>
         </div>
     </div>

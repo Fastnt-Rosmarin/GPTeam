@@ -29,7 +29,7 @@
                     <p class="text-bm">О нас</p>
                     <img class="img-bm" src="img/handshake_icon.svg" alt="" />
                 </a>
-                <a href="#" class="bookmarks" id="menu--content">
+                <a href="page/user.php" class="bookmarks" id="menu--content">
                     <p class="text-bm">Закладки</p>
                     <img class="img-bm" src="img/bookmark_icon.svg" alt="" />
                 </a>

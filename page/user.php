@@ -43,12 +43,17 @@
                     </label>
                 </div>
                 <div class="personal-parameters_block">
-                    <p class="parameters-text">Рассылки новых товаров</p>
+                    <p class="parameters-text custom-newsletter">Рассылки новых товаров</p>
+                    <p class="parameters-text admin-newsletter">Удалять уведомления с пометкой “Отклонено” каждый месяц</p>
                     <label class="switch">
                         <input type="checkbox">
                         <span class="slider"></span>
                     </label>
                 </div>
+            </div>
+            <div class="admin-notification_block">
+                <p class="admin-nothification_text">Уведомления</p>
+                <button class="admin-sorting_block" href="#" id="button-sorting"><img src="../img/filter.svg" alt=""></button>
             </div>
             <div class="sorting-filter_block">
                 <p class="sorting-filter_text">Сортировка закладок</p>
