@@ -18,6 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.admin-user-status');
+    elements.forEach(element => {
+        if (element) {
+            const choices = new Choices(element, {
+                searchEnabled: false,
+                itemSelectText: '',
+                placeholderValue: 'Изменить'
+            });
+        }
+    });
+});
+
 // Универсальная функция для показа/скрытия блоков
 function togglePopup(id, className, open = true) {
     const popup = document.querySelector(id);
@@ -190,6 +203,12 @@ document.querySelectorAll('.editor_block').forEach(button => {
             form.style.display = 'flex';
         }
     });
+});
+
+// Открытие / закрытие формы статуса
+document.getElementById('button-status').addEventListener('click', () => {
+    const statusBlock = document.querySelector('.admin-panel-status_block');
+    statusBlock.classList.toggle('open');
 });
 
 // Функция для обновления текста ошибки

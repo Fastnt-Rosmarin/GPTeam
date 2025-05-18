@@ -2862,6 +2862,141 @@ body {
     display: flex;
 }
 
+.admin-notification_block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    .admin-nothification_text {
+        font-size: 10px;
+        color: #252774;
+        font-weight: 600;
+    }
+    .admin-panel-status_block {
+        width: 150px;
+        position: absolute;
+        z-index: 30;
+        top: 20px;
+        right: 20px;
+        display: none;
+        flex-direction: column;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.164);
+        border-radius: 3px;
+        background: $white;
+        padding: 5px;
+        .admin-sorting-status-line {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #EBEBEB;
+            padding: 5px;
+            .admin-sorting-status-text {
+                color: $dark-blue;
+                font-weight: 500;
+                font-size: $font-b;
+            }
+        }
+        .no-burder_block {
+            border-bottom: none;
+        }
+    }
+    .admin-panel-status_block.open {
+        display: flex;
+    }
+}
+
+.admin-applications-user_block {
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    background: #F7F7F7;
+    padding: 10px 10px 0px 10px;
+    .admin-applications-list {
+        padding: 0px 10px;
+        overflow-y: auto;
+        .admin-user-applications_block {
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #EBEBEB;
+            background: $white;
+            border-radius: 3px;
+            padding: 10px;
+            margin-bottom: 15px;
+            .admin-user-applic-info_block {
+                display: flex;
+                gap: 10px;
+                .admin-personal-user {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #EBEBEB;
+                    border-radius: 100px;
+                }
+                .admin-user-info_block {
+                    display: flex;
+                    flex-direction: column;
+                    width: 110px;
+                    gap: 2px;
+                    .admin-fio-user-text {
+                        font-size: $font-b;
+                        font-weight: 600;
+                        color: $dark-blue;
+                    }
+                    .admin-email-user-text {
+                        font-size: $font-s;
+                        font-weight: 500;
+                        color: $dark-blue;
+                    }
+                    .admin-data-user-text {
+                        font-size: $font-s;
+                        font-weight: 500;
+                        color: #D9D9D9;
+                    }
+                }
+            }
+            .admin-user-applic-status_block {
+                height: 27px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .admin-user-status-text {
+                    color: $dark-blue;
+                    font-size: $font-s;
+                    font-weight: 500;
+                }
+                .choices {
+                    position: relative;
+                    display: flex !important;
+                    width: 90px;
+                    height: 25px;
+                    margin-bottom: 0px !important;
+                    cursor: pointer;
+                }
+                .choices__inner {
+                    border: 1px solid #D6D6D6 !important;
+                }
+                .choices__item--selectable {
+                    font-size: $font-s !important;
+                    font-weight: 400 !important;
+                }
+                .choices__list {
+                    width: 90px !important;
+                }
+                .choices__placeholder {
+                    opacity: 1 !important;
+                    color: #b3b3b3 !important;
+                    font-size: $font-s !important;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
 ///// Адаптив /////
 @media (min-width: 1024px) {
     ///// Главная страница

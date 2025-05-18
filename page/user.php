@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <title>Личный кабинет</title>
 </head>
 
@@ -53,11 +55,39 @@
             </div>
             <div class="admin-notification_block">
                 <p class="admin-nothification_text">Уведомления</p>
-                <button class="admin-sorting_block" href="#" id="button-sorting"><img src="../img/filter.svg" alt=""></button>
+                <button class="admin-sorting_block" id="button-status"><img src="../img/filter.svg" alt=""></button>
+                <div class="admin-panel-status_block">
+                    <button class="admin-sorting-status-line">
+                        <p class="admin-sorting-status-text">Все</p>
+                        <img src="" alt="" class="admin-check-mark_img">
+                    </button>
+                    <button class="admin-sorting-status-line">
+                        <p class="admin-sorting-status-text">В ожидании</p>
+                        <img src="" alt="" class="admin-check-mark_img">
+                    </button>
+                    <button class="admin-sorting-status-line">
+                        <p class="admin-sorting-status-text">Принятые</p>
+                        <img src="" alt="" class="admin-check-mark_img">
+                    </button>
+                    <button class="admin-sorting-status-line no-burder_block">
+                        <p class="admin-sorting-status-text">Отклонённые</p>
+                        <img src="" alt="" class="admin-check-mark_img">
+                    </button>
+                </div>
+            </div>
+            <div class="admin-applications-user_block">
+                <div class="admin-applications-list">
+                    <?php include('admin-user-application.php'); ?>
+                    <?php include('admin-user-application.php'); ?>
+                    <?php include('admin-user-application.php'); ?>
+                    <?php include('admin-user-application.php'); ?>
+                    <?php include('admin-user-application.php'); ?>
+                    <?php include('admin-user-application.php'); ?>
+                </div>
             </div>
             <div class="sorting-filter_block">
                 <p class="sorting-filter_text">Сортировка закладок</p>
-                <button class="sorting_block" href="#" id="button-sorting"><img src="../img/filter.svg" alt=""></button>
+                <button class="sorting_block" id="button-sorting"><img src="../img/filter.svg" alt=""></button>
             </div>
             <div class="sorting-popup_goods">
                 <div class="sort-form_goods">
