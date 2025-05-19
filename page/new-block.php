@@ -7,7 +7,7 @@
     <div class="info-block_right">
         <img src="../img/bookmarks.svg" alt="">
         <?php include('admin-popup_forms.php'); ?>
-        <div class="admin-new-edit_block">
+        <div class="admin-new-edit_block admin_mode">
             <button class="editor_block" id="editor_button">
                 <img src="../img/pencil.svg" alt="" class="">
             </button>

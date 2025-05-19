@@ -22,9 +22,10 @@
             </div>
             <div class="filter-year_block">
                 <p class="year-block_text">2025 год</p>
-                <a class="filter_block" href=""><img src="../img/filter.svg" alt=""></a>
+                <button class="filter_block" id="button-sort_year"><img src="../img/filter.svg" alt=""></button>
             </div>
-            <div class="admin-adding-products-block">
+            <?php include('popup_year.php'); ?>
+            <div class="admin-adding-products-block admin_mode">
                 <a class="admin-button_adding" id="adding-button" href="creation-news.php">
                     <img src="../img/plus-admin_icon.svg" alt="" class="plus-img">
                     <p class="adding-prod_text">

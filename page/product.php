@@ -23,7 +23,7 @@
                     <a class="star-img" href=""><img src="../img/star.svg" alt=""></a>
                 </div>
                 <?php include('admin-popup_forms.php'); ?> 
-                <div class="admin-product-edit_block">
+                <div class="admin-product-edit_block admin_mode">
                     <button class="editor_block" id="editor_button">
                         <img src="../img/pencil.svg" alt="" class="">
                     </button>
@@ -130,7 +130,7 @@
                 </div>
             </div>
             <div class="product-button_block">
-                <a class="admin-button_adding button-adding" id="adding-button">
+                <a class="admin-button_adding button-adding admin_mode" id="adding-button">
                     <img src="../img/plus-admin_icon.svg" alt="" class="plus-img">
                     <p class="adding-prod_text">
                         Добавить товар

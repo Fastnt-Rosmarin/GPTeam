@@ -9,7 +9,7 @@
     <div class="ri-prod_block">
         <img class="product_img" src="../img/machine.svg" alt="" />
         <?php include('admin-popup_forms.php'); ?>
-        <div class="admin-catalog-edit_block">
+        <div class="admin-catalog-edit_block admin_mode">
             <button class="editor_block" id="editor_button">
                 <img src="../img/pencil.svg" alt="" class="">
             </button>

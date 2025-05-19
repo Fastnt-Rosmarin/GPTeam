@@ -46,14 +46,14 @@
                 </div>
                 <div class="personal-parameters_block">
                     <p class="parameters-text custom-newsletter">Рассылки новых товаров</p>
-                    <p class="parameters-text admin-newsletter">Удалять уведомления с пометкой “Отклонено” каждый месяц</p>
+                    <p class="parameters-text admin-newsletter admin_mode">Удалять уведомления с пометкой “Отклонено” каждый месяц</p>
                     <label class="switch">
                         <input type="checkbox">
                         <span class="slider"></span>
                     </label>
                 </div>
             </div>
-            <div class="admin-notification_block">
+            <div class="admin-notification_block admin_mode">
                 <p class="admin-nothification_text">Уведомления</p>
                 <button class="admin-sorting_block" id="button-status"><img src="../img/filter.svg" alt=""></button>
                 <div class="admin-panel-status_block">
@@ -75,7 +75,7 @@
                     </button>
                 </div>
             </div>
-            <div class="admin-applications-user_block">
+            <div class="admin-applications-user_block admin_mode">
                 <div class="admin-applications-list">
                     <?php include('admin-user-application.php'); ?>
                     <?php include('admin-user-application.php'); ?>
@@ -128,7 +128,7 @@
         <div class="adap-sorting-filter_block">
             <div class="sorting-filter_block">
                 <p class="sorting-filter_text">Сортировка закладок</p>
-                <button class="sorting_block" href="#" id="button-sort_year"><img src="../img/filter.svg" alt=""></button>
+                <button class="sorting_block" id="button-sort_year"><img src="../img/filter.svg" alt=""></button>
             </div>
         </div>
         <?php include('popup_year.php'); ?>

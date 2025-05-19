@@ -20,7 +20,7 @@
                 <p id="text-nav"><a id="text-nav" href="../index.php">Главная /</a><a id="text-nav" href="news.php"> Новости</a> / Статься</p>
                 <p id="text-nav-fat">Новый ввоз станков!</p>
                 <?php include('admin-popup_forms.php'); ?>
-                <div class="admin-item-edit_block">
+                <div class="admin-item-edit_block admin_mode">
                     <button class="editor_block" id="editor_button">
                         <img src="../img/pencil.svg" alt="" class="">
                     </button>
@@ -49,7 +49,7 @@
                         <p class="date-item">12.01.25</p>
                         <img src="../img/bookmarks-ser.svg" alt="">
                     </div>
-                    <div class="admin-adding-products-block">
+                    <div class="admin-adding-products-block admin_mode">
                         <a class="admin-button_adding" id="adding-button" href="creation-news.php">
                             <img src="../img/plus-admin_icon.svg" alt="" class="plus-img">
                             <p class="adding-prod_text">

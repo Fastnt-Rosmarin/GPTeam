@@ -11,15 +11,15 @@
     <div class="ri-prod_block">
         <img class="product_img" src="../img/pocr-ban.svg" alt="" />
         <?php include('admin-popup_forms.php'); ?>
-        <div class="admin-catalog-edit_block">
+        <div class="admin-catalog-edit_block admin_mode">
             <button class="editor_block" id="editor_button">
                 <img src="../img/pencil.svg" alt="" class="">
             </button>
             <div class="admin-menu-editor_block">
-                <button class="redactor_block" id="redactor_button">
+                <a class="redactor_block" id="redactor_button" href="../page/editing-news.php"> <!-- Решить проблему с путями -->
                     <img src="../img/blue-pencil.svg" alt="" class="redactor-img">
                     <p class="redactor-text">Редактировать</p>
-                </button>
+                </a>
                 <button class="delite_block" id="delite_button">
                     <img src="../img/delite.svg" alt="" class="delite-img">
                     <p class="delite-text">Удалить</p>

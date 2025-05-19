@@ -480,10 +480,6 @@ button {
     padding: 0px 10px 10px 0px;
 }
 
-#prod-bench {
-    display: flex; // временно
-}
-
 #prod-coating {
     display: none;
 }
@@ -1199,6 +1195,10 @@ body {
     display: none;
     flex-direction: column;
     padding-top: 10px;
+    .prod-adap-tech {
+        display: flex;
+        flex-direction: column;
+    }
     .technol_bold-text {
         font-size: $font-b;
         font-weight: 700;
@@ -1488,8 +1488,7 @@ body {
     gap: 10px;
     .product-button_app {
         width: 25%;
-        padding: 5px 0px;
-        display: flex;
+        padding: 7px 0px;
         align-items: center;
         justify-content: center;
         border: 1px solid $blue;
@@ -1502,7 +1501,7 @@ body {
     }
     .product-button_mark {
         width: 25%;
-        padding: 5px 0px;
+        padding: 7px 0px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -2007,8 +2006,27 @@ body {
 }
 
 ///////// Админка /////////
-.admin-adding-products-block {
+// Включение / выключение режима "админа"
+.admin_mode {
     display: none;
+}
+
+// Отключение "Рассылки новых товаров"
+.custom-newsletter {
+    display: flex;
+}
+
+// Кнопка "Оставить заявку"
+.product-button_app {
+    display: flex;
+}
+
+// Параметр "Удаление уведовлений"
+.admin-newsletter {
+    max-width: 200px;
+}
+
+.admin-adding-products-block {
     justify-content: center;
     padding-top: 5px;
     padding-bottom: 10px;
@@ -2270,7 +2288,6 @@ body {
 }
 
 .admin-product-edit_block {
-    display: none;
     flex-direction: column;
     align-items: flex-end;
     .editor_block {
@@ -2325,7 +2342,6 @@ body {
 }
 
 .admin-item-edit_block {
-    display: none;
     flex-direction: column;
     align-items: flex-end;
     .editor_block {
@@ -2439,10 +2455,9 @@ body {
 }
 
 .button-adding {
-    display: none;
-    width: 25%;
+    width: 30%;
     gap: 5px;
-    padding: 5px 0px;
+    padding: 6px 0px;
     align-items: center;
     justify-content: center;
     border: 1px solid #238af3;
@@ -2853,18 +2868,9 @@ body {
 }
 
 ////// Личный кабинет //////
-.custom-newsletter {
-    display: none;
-}
-
-.admin-newsletter {
-    max-width: 200px;
-    display: flex;
-}
-
+// 
 .admin-notification_block {
     position: relative;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
@@ -2908,7 +2914,6 @@ body {
 
 .admin-applications-user_block {
     max-height: 350px;
-    display: flex;
     flex-direction: column;
     background: #F7F7F7;
     padding: 10px 10px 0px 10px;
@@ -3298,10 +3303,22 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        .products-v {
+        .button-block_catalog {
             width: 1000px;
+            gap: 20px;
+            padding: 0px 20px 20px 20px;
+            .catalog-button_product {
+                padding: 10px;
+                border: 3px solid #238af3;
+                border-radius: 6px;
+                font-size: 18px;
+            }
+        }
+        .products-v {
+            max-height: 1000px;
+            width: 1000px;
+            padding: 10px 20px 20px 20px;
             gap: 30px;
-            padding: 0px 0px 20px 0px;
             .text-category {
                 gap: 20px;
                 .categ-img {
@@ -3351,8 +3368,9 @@ body {
             }
         }
         .products-v_pocr {
+            max-height: 1000px;
             width: 1000px;
-            padding: 20px 0;
+            padding: 10px 20px 20px 20px;
             gap: 30px;
             box-shadow: none;
             .text-category_pocr {
@@ -3406,6 +3424,46 @@ body {
                     width: 180px;
                     height: 190px;
                 }
+            }
+        }
+        .product_technology {
+            width: 100%;
+            align-items: center;
+            padding-top: 20px;
+            .prod-adap-tech {
+                width: 1000px;
+                .technol_bold-text {
+                    font-size: 25px;
+                }
+                .technol_thin-text {
+                    font-size: 18px;
+                }
+                .technol_thin-blue-text {
+                    font-size: 18px;
+                }
+                .technol_use {
+                    padding: 20px 100px 40px 100px;
+                    gap: 30px;
+                    margin-bottom: 20px;
+                    box-shadow: none;
+                    box-shadow: 0 -10px 5px -5px rgba(0, 0, 0, 0.12), 0 10px 5px -5px rgba(0, 0, 0, 0.12);
+                    .technol-text_block {
+                        gap: 20px;
+                    }
+                }
+                .text-tech_indent {
+                    padding: 20px 0px 20px 100px;
+                }
+                .technol-coating_block {
+                    padding: 10px 40px 20px 100px;
+                    gap: 40px;
+                    .barrel-img {
+                        height: 170px;
+                    }
+                }
+            }
+            .technol-application_block {
+                width: 1000%;
             }
         }
     }

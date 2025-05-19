@@ -461,10 +461,6 @@ button {
   padding: 0px 10px 10px 0px;
 }
 
-#prod-bench {
-  display: flex;
-}
-
 #prod-coating {
   display: none;
 }
@@ -1170,6 +1166,10 @@ body {
   flex-direction: column;
   padding-top: 10px;
 }
+.product_technology .prod-adap-tech {
+  display: flex;
+  flex-direction: column;
+}
 .product_technology .technol_bold-text {
   font-size: 10px;
   font-weight: 700;
@@ -1459,8 +1459,7 @@ body {
 }
 .product-button_block .product-button_app {
   width: 25%;
-  padding: 5px 0px;
-  display: flex;
+  padding: 7px 0px;
   align-items: center;
   justify-content: center;
   border: 1px solid #238af3;
@@ -1473,7 +1472,7 @@ body {
 }
 .product-button_block .product-button_mark {
   width: 25%;
-  padding: 5px 0px;
+  padding: 7px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1972,8 +1971,23 @@ body {
   margin-bottom: 10px;
 }
 
-.admin-adding-products-block {
+.admin_mode {
   display: none;
+}
+
+.custom-newsletter {
+  display: flex;
+}
+
+.product-button_app {
+  display: flex;
+}
+
+.admin-newsletter {
+  max-width: 200px;
+}
+
+.admin-adding-products-block {
   justify-content: center;
   padding-top: 5px;
   padding-bottom: 10px;
@@ -2235,7 +2249,6 @@ body {
 }
 
 .admin-product-edit_block {
-  display: none;
   flex-direction: column;
   align-items: flex-end;
 }
@@ -2290,7 +2303,6 @@ body {
 }
 
 .admin-item-edit_block {
-  display: none;
   flex-direction: column;
   align-items: flex-end;
 }
@@ -2404,10 +2416,9 @@ body {
 }
 
 .button-adding {
-  display: none;
-  width: 25%;
+  width: 30%;
   gap: 5px;
-  padding: 5px 0px;
+  padding: 6px 0px;
   align-items: center;
   justify-content: center;
   border: 1px solid #238af3;
@@ -2825,18 +2836,8 @@ body {
   color: #DADADA;
 }
 
-.custom-newsletter {
-  display: none;
-}
-
-.admin-newsletter {
-  max-width: 200px;
-  display: flex;
-}
-
 .admin-notification_block {
   position: relative;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
@@ -2880,7 +2881,6 @@ body {
 
 .admin-applications-user_block {
   max-height: 350px;
-  display: flex;
   flex-direction: column;
   background: #F7F7F7;
   padding: 10px 10px 0px 10px;
@@ -3266,10 +3266,22 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .catalog_adap .products-v {
+  .catalog_adap .button-block_catalog {
     width: 1000px;
+    gap: 20px;
+    padding: 0px 20px 20px 20px;
+  }
+  .catalog_adap .button-block_catalog .catalog-button_product {
+    padding: 10px;
+    border: 3px solid #238af3;
+    border-radius: 6px;
+    font-size: 18px;
+  }
+  .catalog_adap .products-v {
+    max-height: 1000px;
+    width: 1000px;
+    padding: 10px 20px 20px 20px;
     gap: 30px;
-    padding: 0px 0px 20px 0px;
   }
   .catalog_adap .products-v .text-category {
     gap: 20px;
@@ -3317,8 +3329,9 @@ body {
     height: 25px;
   }
   .catalog_adap .products-v_pocr {
+    max-height: 1000px;
     width: 1000px;
-    padding: 20px 0;
+    padding: 10px 20px 20px 20px;
     gap: 30px;
     box-shadow: none;
   }
@@ -3373,6 +3386,46 @@ body {
   .catalog_adap .products-v_pocr #prod-block .product_img {
     width: 180px;
     height: 190px;
+  }
+  .catalog_adap .product_technology {
+    width: 100%;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .catalog_adap .product_technology .prod-adap-tech {
+    width: 1000px;
+  }
+  .catalog_adap .product_technology .prod-adap-tech .technol_bold-text {
+    font-size: 25px;
+  }
+  .catalog_adap .product_technology .prod-adap-tech .technol_thin-text {
+    font-size: 18px;
+  }
+  .catalog_adap .product_technology .prod-adap-tech .technol_thin-blue-text {
+    font-size: 18px;
+  }
+  .catalog_adap .product_technology .prod-adap-tech .technol_use {
+    padding: 20px 100px 40px 100px;
+    gap: 30px;
+    margin-bottom: 20px;
+    box-shadow: none;
+    box-shadow: 0 -10px 5px -5px rgba(0, 0, 0, 0.12), 0 10px 5px -5px rgba(0, 0, 0, 0.12);
+  }
+  .catalog_adap .product_technology .prod-adap-tech .technol_use .technol-text_block {
+    gap: 20px;
+  }
+  .catalog_adap .product_technology .prod-adap-tech .text-tech_indent {
+    padding: 20px 0px 20px 100px;
+  }
+  .catalog_adap .product_technology .prod-adap-tech .technol-coating_block {
+    padding: 10px 40px 20px 100px;
+    gap: 40px;
+  }
+  .catalog_adap .product_technology .prod-adap-tech .technol-coating_block .barrel-img {
+    height: 170px;
+  }
+  .catalog_adap .product_technology .technol-application_block {
+    width: 1000%;
   }
   .text-navigation {
     position: relative;
