@@ -16,7 +16,7 @@
                 <img src="../img/pencil.svg" alt="" class="">
             </button>
             <div class="admin-menu-editor_block">
-                <a class="redactor_block" id="redactor_button" href="../page/editing-news.php"> <!-- Решить проблему с путями -->
+                <a class="redactor_block" id="redactor_button" href="../page/editing-product.php"> <!-- Решить проблему с путями -->
                     <img src="../img/blue-pencil.svg" alt="" class="redactor-img">
                     <p class="redactor-text">Редактировать</p>
                 </a>

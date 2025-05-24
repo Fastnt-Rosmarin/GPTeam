@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="main-block">
+    <div class="main-block adap-main">
         <div class="creation-product_block">
             <select id="choices-select">
                 <option value="Материалы">Материалы</option>
@@ -36,15 +36,15 @@
             </button>
             <div class="creation-name-product_block">
                 <p class="creation-name-product_text">Полное название товара:</p>
-                <textarea class="creation-name-info_block">Модель - Dip Spin Coating Machine DS 250</textarea>
+                <textarea class="creation-name-info_block">Написать ...</textarea>
                 <p class="creation-name-product_text">Краткое описание:</p>
-                <textarea class="creation-name-info_block">Машина для нанесения покрытий погружением в центрифугу</textarea>
+                <textarea class="creation-name-info_block">Написать ...</textarea>
             </div>
             <div class="creation-button_block">
                 <button class="creation-prepared-button" id="button-save" type="button">Готово</button>
                 <a class="creation-cancellation-button" href="product.php">Отмена</a>
                 <?php include('admin-popup_forms.php'); ?>
-            </div>
+            </div> 
         </div>
     </div>
 </body>

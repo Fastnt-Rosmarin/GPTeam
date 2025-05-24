@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="main-block">
+    <div class="main-block adap-main">
         <div class="creation-news_block">
             <input type="text" placeholder="Заголовок ..." id="creation-title-news_input">
             <a type="button" class="creation-news-picture_block">

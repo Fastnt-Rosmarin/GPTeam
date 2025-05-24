@@ -5,11 +5,11 @@
         <p class="news-text_date">12.01.25</p>
     </a>
     <div class="info-block_right">
-        <img src="../img/bookmarks.svg" alt="">
+        <img class="bookmarks-img" src="../img/bookmarks.svg" alt="">
         <?php include('admin-popup_forms.php'); ?>
         <div class="admin-new-edit_block admin_mode">
             <button class="editor_block" id="editor_button">
-                <img src="../img/pencil.svg" alt="" class="">
+                <img src="../img/pencil.svg" alt="" class="pencil-img">
             </button>
             <div class="admin-menu-editor_block">
                 <a class="redactor_block" id="redactor_button" href="editing-news.php">

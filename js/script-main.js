@@ -160,8 +160,8 @@ document.querySelectorAll('.catalog-button_product').forEach(button => {
 
         // Показываем соответствующий блок
         const id = button.id;
-        document.getElementById('prod-bench').style.display = (id === 'materials-button') ? 'flex' : 'none';
-        document.getElementById('prod-coating').style.display = (id === 'equipment-button') ? 'flex' : 'none';
+        document.getElementById('prod-bench').style.display = (id === 'materials-button') ? 'block' : 'none';
+        document.getElementById('prod-coating').style.display = (id === 'equipment-button') ? 'block' : 'none';
         document.getElementById('prod-technology').style.display = (id === 'tehnologe-button') ? 'flex' : 'none';
     });
 });

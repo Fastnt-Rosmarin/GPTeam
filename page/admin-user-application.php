@@ -1,7 +1,7 @@
 <div class="admin-user-applications_block">
     <div class="admin-user-applic-info_block">
         <div class="admin-personal-user">
-            <img src="../img/user.svg" alt="">
+            <img src="../img/user.svg" alt="" class="user-personal-img">
         </div>
         <div class="admin-user-info_block">
             <p class="admin-fio-user-text">Мельников Андрей Родионович</p>
@@ -12,7 +12,6 @@
     <div class="admin-user-applic-status_block">
         <p class="admin-user-status-text">Статус:</p>
         <select class="admin-user-status">
-            <option value="Всё">Всё</option>
             <option value="В ожидании">В ожидании</option>
             <option value="Принятие">Принятие</option>
             <option value="Отключено">Отключено</option>

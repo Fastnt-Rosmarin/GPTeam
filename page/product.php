@@ -130,7 +130,7 @@
                 </div>
             </div>
             <div class="product-button_block">
-                <a class="admin-button_adding button-adding admin_mode" id="adding-button">
+                <a class="admin-button_adding button-adding admin_mode" id="adding-button" href="creation-product.php">
                     <img src="../img/plus-admin_icon.svg" alt="" class="plus-img">
                     <p class="adding-prod_text">
                         Добавить товар

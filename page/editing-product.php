@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="main-block">
+    <div class="main-block adap-main">
         <div class="edit-product-selecting_block">
             <select id="choices-select">
                 <option value="Материалы">Материалы</option>

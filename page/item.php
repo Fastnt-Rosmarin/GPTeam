@@ -47,7 +47,7 @@
                     </div>
                     <div class="item-date_block">
                         <p class="date-item">12.01.25</p>
-                        <img src="../img/bookmarks-ser.svg" alt="">
+                        <img src="../img/bookmarks-ser.svg" alt="" class="bookmarks-img">
                     </div>
                     <div class="admin-adding-products-block admin_mode">
                         <a class="admin-button_adding" id="adding-button" href="creation-news.php">

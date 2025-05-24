@@ -55,7 +55,7 @@
             </div>
             <div class="admin-notification_block admin_mode">
                 <p class="admin-nothification_text">Уведомления</p>
-                <button class="admin-sorting_block" id="button-status"><img src="../img/filter.svg" alt=""></button>
+                <button class="admin-sorting_block" id="button-status"><img src="../img/filter.svg" alt="" class="filter-sorting-img"></button>
                 <div class="admin-panel-status_block">
                     <button class="admin-sorting-status-line">
                         <p class="admin-sorting-status-text">Все</p>

@@ -33,7 +33,7 @@
                     </p>
                 </a>
             </div>
-            <div class="prod-bench_adap" id="prod-bench">
+            <div class="prod-bench_adap" id="prod-coating">
                 <div class="products-v">
                     <?php include('products-bench.php'); ?>
                     <?php include('products-bench.php'); ?>
@@ -42,7 +42,7 @@
                     <?php include('products-bench.php'); ?>
                 </div>
             </div>
-            <div class="prod-bench_adap" id="prod-coating">
+            <div class="prod-bench_adap" id="prod-bench">
                 <div class="products-v_pocr">
                     <?php include('products-coating.php'); ?>
                     <?php include('products-coating.php'); ?>
@@ -158,7 +158,7 @@
                         <div class="frame_block"></div>
                         <div class="basic-app_block">
                             <p class="technol_bold-text">Базовое покрытие</p>
-                            <p class="technol_thin-text">
+                            <p class="technol_thin-text adap-technol_thin-text">
                                 Базовое покрытие является жизненно важным защитным слоем, наносимым непосредственно на металлическую поверхность в системе покрытия. Он содержит цинковые хлопья, обеспечивающие катодную защиту, жертвуя собой для защиты металла от коррозии. Этот слой защищает от влаги, кислорода и химических веществ, предотвращая ржавчину и деградацию. Техника нанесения базового покрытия может варьироваться в зависимости от формы компонента и его использования. В целом, это основа устойчивой к коррозии и функциональной системы покрытий.
                             </p>
                         </div>
@@ -169,7 +169,7 @@
                         <div class="frame_block"></div>
                         <div class="basic-app_block">
                             <p class="technol_bold-text">Финишное покрытие</p>
-                            <p class="technol_thin-text">
+                            <p class="technol_thin-text adap-technol_thin-text">
                                 Финишное покрытие — это последний слой, наносимый поверх базового покрытия для повышения долговечности и функциональности за счет дополнительной защиты от износа, ультрафиолетового излучения, химических веществ и влаги. Кроме того, он играет решающую роль в улучшении внешнего вида системы покрытия, предлагая широкий спектр вариантов цвета, блеска и отделки. Он не только обеспечивает дополнительную защиту, но и значительно продлевает срок службы и производительность системы покрытий, что делает ее основным компонентом для любого успешного нанесения покрытия.
                             </p>
                         </div>
@@ -185,7 +185,7 @@
                         <div class="plus_block">Превосходная <br>коррозионная <br>стойкость</div>
                         <div class="plus_block">Снижение затрат на <br>техническое <br> обслуживание</div>
                     </div>
-                    <p class="technol_bold-text text-tech_indent">
+                    <p class="technol_bold-text text-tech_indent adap-text-tech_indent">
                         В чем ECOMET Корунд превосходит традиционные покрытия?
                     </p>
                     <div class="technol-text-plus_block">

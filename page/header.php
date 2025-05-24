@@ -33,6 +33,12 @@
             <img class="ri-auto_img" src="../img/castle.svg" alt="" />
         </div>
     </div>
+    <div class="adap-cookies-block">
+        <div class="cookies-block">
+            <p class="cookies-text">Мы используем c͟o͟o͟k͟i͟e͟s͟ для вашего полного комфорта!</p>
+            <button class="cookies-button">Окей</button>
+        </div>
+    </div>
 </div>
 <!-- Меню -->
 <div class="popup-block_menu">

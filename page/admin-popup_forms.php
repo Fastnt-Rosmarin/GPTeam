@@ -2,9 +2,9 @@
     <div class="clarification-delite_block">
         <div class="clar-dil-text-block">
             <p class="dil-clar-text">
-                Вы уверены что хотите <br>удалить?
+                Вы уверены что хотите удалить?
             </p>
-            <button id="clous-delit" type="button"><img src="../img/cross-grey.svg" alt="" class="clous-clar-dil"></button> <!-- Доделать -->
+            <button id="clous-delit" type="button"><img src="../img/cross-grey.svg" alt="" class="clous-clar-dil"></button>
         </div>
         <div class="clar-dil-button-block">
             <button class="confirmation_block" id="confir_button">Да</button>
@@ -14,12 +14,12 @@
 </div>
 
 <div class="popup-clarification_block">
-    <div class="clarification-_block">
+    <div class="clarification_block">
         <div class="clar-dil-text-block">
             <p class="dil-clar-text">
                 Сохранить изминения?
             </p>
-            <button id="clous-cancel"><img src="../img/cross-grey.svg" alt="" class="clous-clar-dil"></button> <!-- Доделать -->
+            <button id="clous-cancel"><img src="../img/cross-grey.svg" alt="" class="clous-clar-dil"></button> 
         </div>
         <div class="clar-dil-button-block">
             <button class="confirmation_block" id="confir_button">Да</button>
@@ -34,7 +34,7 @@
             <p class="error-clar-text">
                 Вы не выбрали категорию <!-- В script-main лежит скрипт, меняющий текст при определенной ошибке -->
             </p>
-            <button><img src="../img/cross-grey.svg" alt="" class="clous-clar-dil"></button> <!-- Доделать -->
+            <button><img src="../img/cross-grey.svg" alt="" class="clous-clar-dil"></button> 
         </div>
         <img src="../img/sad-smiley_icon.svg" alt="" class="error-img_block">
     </div>

@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="main-block">
+    <div class="main-block adap-main">
         <div class="edit-news_block">
             <p class="edit-name-news-text">Новый ввоз станков!</p>
             <img src="../img/image%20129.png" alt="" class="edit-news-img">
