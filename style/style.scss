@@ -350,7 +350,7 @@ button {
             position: fixed;
             bottom: 0;
             z-index: 50;
-            display: flex;
+            display: none;
             align-items: center;
             padding: 20px;
             background: $dark-blue;
@@ -3488,7 +3488,7 @@ body {
                 gap: 40px;
                 #foot-elemets {
                     gap: 30px;
-                    img {
+                    .foot-elemets-img {
                         width: 44px;
                         height: 44px;
                     }
