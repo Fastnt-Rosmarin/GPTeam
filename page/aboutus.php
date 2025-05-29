@@ -37,7 +37,7 @@
                     </p>
                 </div>
                 <div class="aboutus-quote_block">
-                    <img src="../img/handshake_white.svg" alt="">
+                    <img class="about-us-quote-img" src="../img/handshake_white.svg" alt="">
                     <p class="text_quote_block">
                         Предприятие сотрудничает практически со всеми крупными автосборочными заводами, расположенными на территории РФ, что свидетельствует о высоком уровне доверия и признании качества продукции.
                     </p>
@@ -70,21 +70,21 @@
                     <div class="feature-aboutus_circle">
                         <div class="feature-circle_block">
                             <div class="circle-feature_block">
-                                <img src="../img/plans.svg" alt="">
+                                <img class="feature-img" src="../img/plans.svg" alt="">
                             </div>
                             <p class="text_feature">Экологичность</p>
                         </div>
                         <div class="feature_line"></div>
                         <div class="feature-circle_block">
                             <div class="circle-feature_block">
-                                <img src="../img/medal.svg" alt="">
+                                <img class="feature-img" src="../img/medal.svg" alt="">
                             </div>
                             <p class="text_feature">Качество</p>
                         </div>
                         <div class="feature_line"></div>
                         <div class="feature-circle_block">
                             <div class="circle-feature_block">
-                                <img src="../img/like.svg" alt="">
+                                <img class="feature-img" src="../img/like.svg" alt="">
                             </div>
                             <p class="text_feature">Надёжность</p>
                         </div>

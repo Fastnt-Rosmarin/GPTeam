@@ -407,7 +407,7 @@ button {
   padding: 10px 20px;
 }
 #prod-block .le-prod_block {
-  max-width: 200px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2792,6 +2792,11 @@ body {
   border-radius: 3px;
   font-size: 8px;
   font-weight: 500;
+}
+.creation-product_block .creation-name-product_block .creation-name-info_block::-moz-placeholder {
+  color: #DADADA;
+}
+.creation-product_block .creation-name-product_block .creation-name-info_block::placeholder {
   color: #DADADA;
 }
 
@@ -3308,7 +3313,7 @@ body {
     border-radius: 20px;
   }
   .main-block .products-h_adap .products-h #prod-block .le-prod_block {
-    max-width: 360px;
+    width: 360px;
   }
   .main-block .products-h_adap .products-h #prod-block .le-prod_block .big-text_product {
     font-size: 25px;
@@ -4103,7 +4108,7 @@ body {
     border-radius: 20px;
   }
   .catalog_adap .products-v #prod-block .le-prod_block {
-    max-width: 530px;
+    width: 530px;
   }
   .catalog_adap .products-v #prod-block .le-prod_block .big-text_product {
     font-size: 25px;
@@ -4155,7 +4160,7 @@ body {
     border-radius: 20px;
   }
   .catalog_adap .products-v_pocr #prod-block .le-prod_block {
-    max-width: 530px;
+    width: 530px;
   }
   .catalog_adap .products-v_pocr #prod-block .le-prod_block .big-text_product {
     font-size: 25px;
@@ -4450,7 +4455,7 @@ body {
     border-radius: 20px;
   }
   .product_adap .products-h #prod-block .le-prod_block {
-    max-width: 360px;
+    width: 360px;
   }
   .product_adap .products-h #prod-block .le-prod_block .big-text_product {
     font-size: 25px;
@@ -4566,51 +4571,82 @@ body {
     height: 445px;
   }
   .aboutus_adap .aboutus-info_block {
-    width: 1000px;
-    padding: 20px 0;
+    width: 960px;
+    padding: 20px;
+    margin-bottom: 20px;
     gap: 20px;
   }
-  .aboutus_adap .aboutus-info_block .aboutus-text_block {
-    gap: 20px;
+  .aboutus_adap .aboutus-info_block .aboutus-bold_text {
+    margin-top: 15px;
+    font-size: 25px;
   }
-  .aboutus_adap .aboutus-info_block .aboutus-text_block .text-info_aboutus {
+  .aboutus_adap .aboutus-info_block .aboutus-thin-text {
     font-size: 20px;
   }
-  .aboutus_adap .aboutus-info_block .aboutus-quote_block {
-    padding: 40px 60px;
-    gap: 30px;
+  .aboutus_adap .aboutus-info_block .aboutus-bold-blue_text {
+    font-size: 25px;
   }
-  .aboutus_adap .aboutus-info_block .aboutus-quote_block img {
-    width: 130px;
-    height: 130px;
+  .aboutus_adap .aboutus-info_block .aboutus-thin-blue_text {
+    font-size: 20px;
+  }
+  .aboutus_adap .aboutus-info_block .text-about-indent {
+    padding: 0px;
+  }
+  .aboutus_adap .aboutus-info_block .aboutus-company_block {
+    padding: 0px;
+    gap: 20px;
+  }
+  .aboutus_adap .aboutus-info_block .aboutus-company_block .aboutus-company-info_text {
+    gap: 30px;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .aboutus_adap .aboutus-info_block .aboutus-company_block .aboutus-company-info_text .company-img {
+    height: 155px;
+  }
+  .aboutus_adap .aboutus-info_block .aboutus-quote_block {
+    gap: 30px;
+    padding: 45px 160px 45px 100px;
+  }
+  .aboutus_adap .aboutus-info_block .aboutus-quote_block .about-us-quote-img {
+    width: 108px;
+    height: 108px;
   }
   .aboutus_adap .aboutus-info_block .aboutus-quote_block .text_quote_block {
     font-size: 20px;
-    font-weight: 400;
   }
   .aboutus_adap .aboutus-info_block .aboutus-feature_block {
-    padding: 40px 120px;
+    padding: 60px 100px;
+    gap: 30px;
   }
   .aboutus_adap .aboutus-info_block .aboutus-feature_block .feature-aboutus_circle .feature-circle_block {
-    width: 130px;
+    width: 165px;
     gap: 20px;
   }
   .aboutus_adap .aboutus-info_block .aboutus-feature_block .feature-aboutus_circle .feature-circle_block .circle-feature_block {
-    width: 145px;
-    height: 145px;
-    border: 6px solid #252774;
+    width: 155px;
+    height: 155px;
+    border: 6px solid #238af3;
+    border-radius: 100px;
   }
-  .aboutus_adap .aboutus-info_block .aboutus-feature_block .feature-aboutus_circle .feature-circle_block .circle-feature_block img {
-    width: 63px;
-    height: 63px;
+  .aboutus_adap .aboutus-info_block .aboutus-feature_block .feature-aboutus_circle .feature-circle_block .feature-img {
+    width: 68px;
+    height: 68px;
   }
   .aboutus_adap .aboutus-info_block .aboutus-feature_block .feature-aboutus_circle .feature-circle_block .text_feature {
     font-size: 25px;
-    font-weight: 650;
   }
   .aboutus_adap .aboutus-info_block .aboutus-feature_block .feature-aboutus_circle .feature_line {
     width: 60px;
-    height: 7px;
+    height: 6px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+  }
+  .aboutus_adap .aboutus-info_block .aboutus-development-block {
+    margin: 20px 0;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.199);
+    padding: 30px 60px;
+    gap: 20px;
   }
   .personal_adap {
     display: flex;
@@ -4709,6 +4745,7 @@ body {
     width: 250px;
     top: 35px;
     right: 20px;
+    z-index: 10;
     border-radius: 6px;
     padding: 10px;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.164);
@@ -4875,7 +4912,7 @@ body {
     border-radius: 20px;
   }
   .save-products_block .save_list_block .prod-maping_block #prod-block .le-prod_block {
-    max-width: 360px;
+    width: 360px;
   }
   .save-products_block .save_list_block .prod-maping_block #prod-block .le-prod_block .big-text_product {
     font-size: 25px;
@@ -4893,7 +4930,7 @@ body {
     font-size: 18px;
   }
   .save-products_block .save_list_block .prod-maping_block #prod-block .le-prod_block {
-    max-width: 530px;
+    width: 530px;
   }
   .save-products_block .save_list_block .prod-maping_block #prod-block .le-prod_block .big-text_product {
     font-size: 25px;
@@ -4968,8 +5005,13 @@ body {
   .save-paper_block .save_list_block .block-new_info .info-block_left .news-text_date {
     font-size: 25px;
   }
-  .save-paper_block .save_list_block .block-new_info .info-block_right img {
+  .save-paper_block .save_list_block .block-new_info .info-block_right .bookmarks-img {
     width: 47px;
     height: 47px;
+  }
+  .save-paper_block .save_list_block .block-new_info .info-block_right .pencil-img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(10);
   }
 }/*# sourceMappingURL=style.css.map */

@@ -36,9 +36,9 @@
             </button>
             <div class="creation-name-product_block">
                 <p class="creation-name-product_text">Полное название товара:</p>
-                <textarea class="creation-name-info_block">Написать ...</textarea>
+                <input type="text" class="creation-name-info_block" placeholder="Написать ...">
                 <p class="creation-name-product_text">Краткое описание:</p>
-                <textarea class="creation-name-info_block">Написать ...</textarea>
+                <input type="text" class="creation-name-info_block" placeholder="Написать ...">
             </div>
             <div class="creation-button_block">
                 <button class="creation-prepared-button" id="button-save" type="button">Готово</button>

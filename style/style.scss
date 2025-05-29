@@ -420,7 +420,7 @@ button {
     background: $white;
     padding: 10px 20px;
     .le-prod_block {
-        max-width: 200px;
+        width: 200px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -2823,6 +2823,8 @@ body {
             border-radius: 3px;
             font-size: $font-s;
             font-weight: 500;
+        }
+        .creation-name-info_block::placeholder {
             color: #DADADA;
         }
     }
@@ -3337,7 +3339,7 @@ body {
                     padding: 20px 40px;
                     border-radius: 20px;
                     .le-prod_block {
-                        max-width: 360px;
+                        width: 360px;
                         .big-text_product {
                             font-size: 25px;
                         }
@@ -4138,7 +4140,7 @@ body {
                 padding: 20px 80px 20px 40px;
                 border-radius: 20px;
                 .le-prod_block {
-                    max-width: 530px;
+                    width: 530px;
                     .big-text_product {
                         font-size: 25px;
                     }
@@ -4192,7 +4194,7 @@ body {
                 padding: 20px 80px 20px 40px;
                 border-radius: 20px;
                 .le-prod_block {
-                    max-width: 530px;
+                    width: 530px;
                     .big-text_product {
                         font-size: 25px;
                     }
@@ -4488,7 +4490,7 @@ body {
                 padding: 20px 40px;
                 border-radius: 20px;
                 .le-prod_block {
-                    max-width: 360px;
+                    width: 360px;
                     .big-text_product {
                         font-size: 25px;
                     }
@@ -4609,52 +4611,83 @@ body {
             height: 445px;
         }
         .aboutus-info_block {
-            width: 1000px;
-            padding: 20px 0;
+            width: 960px;
+            padding: 20px;
+            margin-bottom: 20px;
             gap: 20px;
-            .aboutus-text_block {
+            .aboutus-bold_text {
+                margin-top: 15px;
+                font-size: 25px;
+            }
+            .aboutus-thin-text {
+                font-size: 20px;
+            }
+            .aboutus-bold-blue_text {
+                font-size: 25px;
+            }
+            .aboutus-thin-blue_text {
+                font-size: 20px;
+            }
+            .text-about-indent {
+                padding: 0px;
+            }
+            .aboutus-company_block {
+                padding: 0px;
                 gap: 20px;
-                .text-info_aboutus {
-                    font-size: 20px;
+                .aboutus-company-info_text {
+                    gap: 30px;
+                    align-items: center;
+                    padding-top: 10px;
+                    .company-img {
+                        height: 155px;
+                    }
                 }
             }
             .aboutus-quote_block {
-                padding: 40px 60px;
                 gap: 30px;
-                img {
-                    width: 130px;
-                    height: 130px;
+                padding: 45px 160px 45px 100px;
+                .about-us-quote-img {
+                    width: 108px;
+                    height: 108px;
                 }
                 .text_quote_block {
                     font-size: 20px;
-                    font-weight: 400;
                 }
             }
             .aboutus-feature_block {
-                padding: 40px 120px;
+                padding: 60px 100px;
+                gap: 30px;
                 .feature-aboutus_circle {
                     .feature-circle_block {
-                        width: 130px;
+                        width: 165px;
                         gap: 20px;
                         .circle-feature_block {
-                            width: 145px;
-                            height: 145px;
-                            border: 6px solid #252774;
-                            img {
-                                width: 63px;
-                                height: 63px;
-                            }
+                            width: 155px;
+                            height: 155px;
+                            border: 6px solid $blue;
+                            border-radius: 100px;
+                        }
+                        .feature-img {
+                            width: 68px;
+                            height: 68px;
                         }
                         .text_feature {
                             font-size: 25px;
-                            font-weight: 650;
                         }
                     }
                     .feature_line {
                         width: 60px;
-                        height: 7px;
+                        height: 6px;
+                        border-radius: 5px;
+                        margin-bottom: 40px;
                     }
                 }
+            }
+            .aboutus-development-block {
+                margin: 20px 0;
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.199);
+                padding: 30px 60px;
+                gap: 20px;
             }
         }
     }
@@ -4755,6 +4788,7 @@ body {
             width: 250px;
             top: 35px;
             right: 20px;
+            z-index: 10;
             border-radius: 6px;
             padding: 10px;
             box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.164);
@@ -4926,7 +4960,7 @@ body {
                     padding: 20px 80px 20px 40px;
                     border-radius: 20px;
                     .le-prod_block {
-                        max-width: 360px;
+                        width: 360px;
                         .big-text_product {
                             font-size: 25px;
                         }
@@ -4944,7 +4978,7 @@ body {
                         }
                     }
                     .le-prod_block {
-                        max-width: 530px;
+                        width: 530px;
                         .big-text_product {
                             font-size: 25px;
                         }
@@ -5021,9 +5055,14 @@ body {
                     }
                 }
                 .info-block_right {
-                    img {
+                    .bookmarks-img {
                         width: 47px;
                         height: 47px;
+                    }
+                    .pencil-img {
+                        width: 20px;
+                        height: 20px;
+                        filter: brightness(10);
                     }
                 }
             }
