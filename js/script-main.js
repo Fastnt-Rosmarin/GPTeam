@@ -38,6 +38,7 @@ function togglePopup(id, className, open = true) {
         if (open) {
             popup.style.display = 'flex';
             popup.classList.add(className);
+            // Блокируется прокрутка страницы
             document.body.style.overflow = 'hidden';
         } else {
             popup.classList.add(`close${className.slice(4)}`);
@@ -45,6 +46,7 @@ function togglePopup(id, className, open = true) {
                 popup.style.display = 'none';
                 popup.classList.remove(`close${className.slice(4)}`);
             }, 400);
+            // Блокировка прокрутики страницы убирается
             document.body.style.overflow = 'auto';
         }
     }
@@ -157,7 +159,6 @@ document.querySelectorAll('.catalog-button_product').forEach(button => {
         // Сброс классов активности
         document.querySelectorAll('.catalog-button_product').forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
-
         // Показываем соответствующий блок
         const id = button.id;
         document.getElementById('prod-bench').style.display = (id === 'materials-button') ? 'block' : 'none';
@@ -169,11 +170,12 @@ document.querySelectorAll('.catalog-button_product').forEach(button => {
 // Ответы на вопросы
 document.querySelectorAll('.ques-plus_button').forEach(button => {
     button.addEventListener('click', () => {
+        // Создание классов
         const block = button.closest('.ques-block');
         const answer = block.querySelector('.ques-floating_block');
         const icon = block.querySelector('.questions-img');
         const isVisible = answer.style.display === 'block';
-
+        // Вынкция условий при нажатии на кнопку активации
         if (isVisible) {
             answer.style.height = '0';
             answer.style.padding = '0 20px';

@@ -33,7 +33,7 @@
                     <p class="text-bm">Закладки</p>
                     <img class="img-bm" src="img/bookmark_icon.svg" alt="" />
                 </a>
-                <a href="page/connection.php" class="contacts" id="menu--content">
+                <a href="page/contact.php" class="contacts" id="menu--content">
                     <p class="text-bm">Контакты</p>
                     <img class="img-bm" src="img/telephon_icon.svg" alt="" />
                 </a>

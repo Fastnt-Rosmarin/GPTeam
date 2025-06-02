@@ -1998,15 +1998,15 @@ body {
 }
 
 .admin_mode {
-  display: flex;
+  display: none;
 }
 
 .custom-newsletter {
-  display: none;
+  display: flex;
 }
 
 .product-button_app {
-  display: none;
+  display: flex;
 }
 
 .admin-newsletter {

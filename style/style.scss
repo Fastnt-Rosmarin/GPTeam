@@ -2031,17 +2031,17 @@ body {
 ///////// Админка /////////
 // Включение / выключение режима "админа"
 .admin_mode {
-    display: flex;
+    display: none;
 }
 
 // Отключение "Рассылки новых товаров"
 .custom-newsletter {
-    display: none;
+    display: flex;
 }
 
 // Кнопка "Оставить заявку"
 .product-button_app {
-    display: none;
+    display: flex;
 }
 
 // Параметр "Удаление уведовлений"
